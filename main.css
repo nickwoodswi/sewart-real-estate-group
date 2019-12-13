@@ -1,0 +1,273 @@
+@media only screen and (max-width: 768px) {
+    .lead-member {
+        width:350px;
+        margin: 10px;
+    }
+    .listing{
+       width:350px;
+       margin: 10px;
+    }
+  }
+
+.team-photo {
+    max-width: 100%;
+    height: auto;
+}
+
+.contacts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom-style: solid;
+    border-color: lightgray;
+    background-color: white;
+}
+.contacts > .email {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.contacts > .logo {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+#fw-logo {
+    height: 25px;
+}
+a {
+    color: black;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    margin-top: 35px;
+    font-size: large;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+}
+.subheader{
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px; 
+}
+.photo{
+    width: 100%;
+    height: auto;
+}
+.section-divider{
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sell-smarter-body > ul{
+    list-style-type: none;
+    padding-left: 0;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sell-smarter-body > ul li{
+    margin: 12px;
+    text-align: justify;
+}
+
+.team{
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lead-member{
+    max-width: 740px;
+    margin: 10px;
+}
+.contact-logo{
+    display: inline;
+    height: 10px;
+}
+.team-member{
+    max-width: 350px;
+    min-width: 300px;
+    margin: 10px;
+}
+.headshot > img{
+    float: left;
+    max-height: 200px;
+    margin-right: 15px;
+}
+.name{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+}
+.title{
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+}
+.bio{
+    margin: 10px;
+    text-align: justify;
+}
+
+
+.listings{
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.listing{
+    max-width: 740px;
+    margin: 10px;
+}
+.listing-img-container{
+    max-width: 400px;
+    margin-right: 10px;
+    margin-bottom: 9px;
+}
+.listing-img{
+    max-width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+.listing-neighborhood{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+}
+.listing-specs{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    margin-top: 5px;
+}
+.listing-address{
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    margin-bottom: 15px;
+}
+.listing-description{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.listing-links {
+    font-family: 'Quicksand', sans-serif;
+    font-size: small;
+}
+
+.blog{
+}
+.contact{
+}
+
+/*
+body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 48px;
+    margin-top: 12px;
+}
+
+.main-tag {
+    margin-top: 25px;
+    font-size: large;
+}
+
+.sub-container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px; 
+}
+
+.team-photo {
+    width: 100%;
+    height: auto;
+}
+
+.sell-copy {
+    max-width: 800px;
+}
+
+.sell-copy > ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sell-copy > ul li {
+    margin: 12px;
+    text-align: justify;
+}
+
+.photo-title-bio {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.bio-container {
+    max-width: 400px;
+}
+
+.about > .head-shot-div {
+    width: 300px;
+    height: 150px;
+}
+
+p {
+    text-align: justify;
+}
+
+.name-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: x-large;
+    text-align: left;
+}
+
+.team-container {
+    display: flex;
+
+}
+*/
+
+
