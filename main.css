@@ -3,6 +3,9 @@
         width:350px;
         margin: 10px;
     }
+    .contact-logos {
+        flex-wrap:wrap;
+    }
     .listing{
        width:350px;
        margin: 10px;
@@ -76,17 +79,12 @@ a {
     text-align: center;
 }
 
-.sell-smarter-body > ul{
-    list-style-type: none;
-    padding-left: 0;
-    max-width: 800px;
-    margin-right: auto;
+.sell-smarter-body {
+    max-width: 740px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin-left: auto;
-}
-
-.sell-smarter-body > ul li{
-    margin: 12px;
-    text-align: justify;
+    margin-right: auto;
 }
 
 .team{
@@ -101,6 +99,15 @@ a {
 .lead-member{
     max-width: 740px;
     margin: 10px;
+}
+.contact-logos{
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 25px;
+    margin-top: 10px;
+}
+.phone {
+    margin-right: 20px;
 }
 .contact-logo{
     display: inline;
@@ -123,10 +130,9 @@ a {
 .title{
     font-family: 'Quicksand', sans-serif;
     font-size: medium;
+    margin-bottom: 10px;
 }
 .bio{
-    margin: 10px;
-    text-align: justify;
 }
 
 
