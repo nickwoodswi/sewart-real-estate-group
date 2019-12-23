@@ -11,6 +11,20 @@
        margin: 10px;
     }
   }
+  
+@media only screen and (max-width: 322px) {
+    .first-weber-logo {
+        width: 0;
+        height: 0;
+    }
+    #fw-logo {
+        position: relative;
+        top: 30px;
+        right: 25px;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+}
 
 .team-photo {
     max-width: 100%;
@@ -28,6 +42,22 @@
     border-bottom-style: solid;
     border-color: lightgray;
     background-color: white;
+    font-size: 16px;
+}
+.sewart-real-estate-group-contacts{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    min-width: 295px;
+}
+.first-weber-logo{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 50%;
+    margin-right: 10px;
 }
 .contacts > .email {
     margin-left: 10px;
@@ -45,6 +75,102 @@ a {
     color: black;
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkgrey;
+    color: white;
+    text-align: right;
+    text-align: right;
+    height: 25px;
+    line-height: 0px;
+    font-family: 'Quicksand', sans-serif;
+ }
+ .footer > ul {
+     list-style-type: none;
+ }
+ .footer > ul li {
+     margin: 15px;
+ }
+ .footer > ul li a {
+     text-decoration: none;
+ }
+
+.navwrapper {
+    display: flex;
+    justify-content: center;
+}
+.navlinks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Quicksand', sans-serif;
+}
+.north-shore-homes-for-sale {
+    border: dotted 1px lightgrey;
+    border-left: none;
+    border-bottom: none;
+    margin: 5px;
+    margin-left: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.north-shore-homes-for-sale:hover {
+    background-color: lightgrey;
+}
+.blog{
+    border: dotted 1px lightgrey;
+    border-left: none;
+    border-bottom: none;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.blog:hover {
+    background-color: lightgrey;
+}
+.sell-your-home {
+    border: dotted 1px lightgrey;
+    border-left: none;
+    border-bottom: none;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.sell-your-home:hover {
+    background-color: lightgrey;
+}
+.reviews {
+    border: dotted 1px lightgrey;
+    border-left: none;
+    border-bottom: none;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.reviews:hover {
+    background-color: lightgrey;
+}
+.featured-listings{
+    border: dotted 1px lightgrey;
+    border-left: none;
+    border-bottom: none;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.featured-listings:hover {
+    background-color: lightgrey;
+}
+.buttonlink {
+    text-decoration: none;
+}
+
 
 .wrapper{
     display: flex;
@@ -53,7 +179,7 @@ a {
 
 
 .header {
-    margin-top: 35px;
+    margin-top: 50px;
     font-size: large;
     font-family: 'Quicksand', sans-serif;
     font-size: 48px;
@@ -118,6 +244,7 @@ a {
     min-width: 300px;
     margin: 10px;
 }
+
 .headshot > img{
     float: left;
     max-height: 200px;
@@ -183,97 +310,11 @@ a {
     font-size: small;
 }
 
-.blog{
-}
-.contact{
-}
-
-/*
-body {
-    font-family: sans-serif;
+html{
+    scroll-behavior: smooth;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
 
-.section-container {
-    display: flex;
-    flex-direction: column;
-}
 
-.main-container {
-    display: flex;
-    justify-content: center;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 48px;
-    margin-top: 12px;
-}
-
-.main-tag {
-    margin-top: 25px;
-    font-size: large;
-}
-
-.sub-container {
-    display: flex;
-    justify-content: center;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
-    margin-bottom: 15px; 
-}
-
-.team-photo {
-    width: 100%;
-    height: auto;
-}
-
-.sell-copy {
-    max-width: 800px;
-}
-
-.sell-copy > ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.sell-copy > ul li {
-    margin: 12px;
-    text-align: justify;
-}
-
-.photo-title-bio {
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.bio-container {
-    max-width: 400px;
-}
-
-.about > .head-shot-div {
-    width: 300px;
-    height: 150px;
-}
-
-p {
-    text-align: justify;
-}
-
-.name-title {
-    font-family: 'Quicksand', sans-serif;
-    font-size: x-large;
-    text-align: left;
-}
-
-.team-container {
-    display: flex;
-
-}
-*/
 
 
