@@ -1,8 +1,5 @@
-@media only screen and (max-width: 768px) {
-    .lead-member {
-        width:350px;
-        margin: 10px;
-    }
+@media only screen and (max-width: 600px) {
+
     .contact-logos {
         flex-wrap:wrap;
     }
@@ -30,6 +27,21 @@
     max-width: 100%;
     height: auto;
 }
+.photo {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+.sell-smarter-body > ul li {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
 
 .contacts {
     position: fixed;
@@ -39,10 +51,12 @@
     display: flex;
     justify-content: space-between;
     font-family: 'Quicksand', sans-serif;
-    border-bottom-style: solid;
+    border-bottom-style: dotted;
     border-color: lightgray;
+    border-width: 1px;
     background-color: white;
     font-size: 16px;
+    z-index: 1;
 }
 .sewart-real-estate-group-contacts{
     display: flex;
@@ -68,7 +82,7 @@
     margin-right: 10px;
     margin-top: 5px;
 }
-#fw-logo {
+.logo {
     height: 25px;
 }
 a {
@@ -77,30 +91,64 @@ a {
 
 .footer {
     position: fixed;
-    left: 0;
     bottom: 0;
+    left: 0;
     width: 100%;
-    background-color: darkgrey;
-    color: white;
-    text-align: right;
-    text-align: right;
-    height: 25px;
-    line-height: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
     font-family: 'Quicksand', sans-serif;
- }
- .footer > ul {
-     list-style-type: none;
- }
- .footer > ul li {
-     margin: 15px;
- }
- .footer > ul li a {
-     text-decoration: none;
- }
+    border-bottom-style: solid;
+    border-color: lightgray;
+    background-color: white;
+    font-size: 16px;
+}
+.social-channels{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    min-width: 295px;
+}
+.instagram {
+    margin-right: 10px;
+    margin-left: 10px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+.instagram:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.facebook {
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+.facebook:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.scroll-up {
+    margin-left: 10px;
+    width: 140px;
+    text-align: left;
+}
+.footer > a {
+    text-decoration: none;
+}
+.footer > a:hover {
+    color: lightgrey;
+}
 
 .navwrapper {
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 41px;
+    background-color: white;
+    z-index: 1;
 }
 .navlinks{
     display: flex;
@@ -121,7 +169,7 @@ a {
     padding-right: 5px;
 }
 .north-shore-homes-for-sale:hover {
-    background-color: lightgrey;
+    color: lightgrey;
 }
 .blog{
     border: dotted 1px lightgrey;
@@ -132,7 +180,7 @@ a {
     padding-right: 5px;
 }
 .blog:hover {
-    background-color: lightgrey;
+    color: lightgrey;
 }
 .sell-your-home {
     border: dotted 1px lightgrey;
@@ -143,7 +191,7 @@ a {
     padding-right: 5px;
 }
 .sell-your-home:hover {
-    background-color: lightgrey;
+    color: lightgrey;
 }
 .reviews {
     border: dotted 1px lightgrey;
@@ -154,7 +202,7 @@ a {
     padding-right: 5px;
 }
 .reviews:hover {
-    background-color: lightgrey;
+    color: lightgrey;
 }
 .featured-listings{
     border: dotted 1px lightgrey;
@@ -165,7 +213,7 @@ a {
     padding-right: 5px;
 }
 .featured-listings:hover {
-    background-color: lightgrey;
+    color: lightgrey;
 }
 .buttonlink {
     text-decoration: none;
@@ -199,10 +247,13 @@ a {
 }
 .section-divider{
     font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 20px;
     text-align: center;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
 }
 
 .sell-smarter-body {
@@ -221,6 +272,16 @@ a {
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
+}
+.name {
+    font-weight: bold;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+.title {
+    font-weight: bold;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
 }
 .lead-member{
     max-width: 740px;
@@ -292,6 +353,11 @@ a {
     font-size: large;
 }
 .listing-specs{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    margin-top: 5px;
+}
+.listing-price{
     font-family: 'Quicksand', sans-serif;
     font-size: large;
     margin-top: 5px;
