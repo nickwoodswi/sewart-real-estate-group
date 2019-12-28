@@ -13,6 +13,7 @@ function loadPropertyDetails() {
         let cityStates = [];
         let prices = [];
         let editedDetails = [];
+        let photoUrls = [];
 
         $.each($(data).find('div.address'), function(i, val) {
             streetAddresses.push(val.innerText);
@@ -26,9 +27,10 @@ function loadPropertyDetails() {
         $.each($(data).find('div.bedbath'), function(i, val) {
             let propertyDetails = val.innerText.trim();
             let indexedDetails = propertyDetails.split("");
-            let detailObject = {br: indexedDetails[0], fullbath: indexedDetails[27],            halfbath: indexedDetails[48]};
+            let detailObject = {br: indexedDetails[0], fullbath: indexedDetails[27], halfbath: indexedDetails[48]};
             editedDetails.push(detailObject);
         });
+        
         compileData(streetAddresses, cityStates, prices, editedDetails);
     });
 };
@@ -70,23 +72,55 @@ function buildPreviews(filteredArray) {
     let $city = filteredArray[i].city; 
     let $price = filteredArray[i].prices;
     let $street = filteredArray[i].street;
-
     let $br = filteredArray[i].rooms.br;
     let $bath = filteredArray[i].rooms.fullbath;
     let $halfbath = filteredArray[i].rooms.halfbath;
 
+    if ($halfbath == true) {
+
         let payload = 
             
     `<div class="listing">
-        <div class="listing-img-container"><img class="listing-img" src="listing-photos/3131-w-donges-bay-rd.jpg"></div>
-        <div class="listing-neighborhood">${$city}</div>
-        <div class="listing-specs">${$br} bed / ${$bath} bath / ${$halfbath} half-bath</div>
-        <div class="listing-price">${$price}<div>
-        <div class="listing-address">${$street}</div>
-        <div class="listing-links">SCHEDULE A SHOWING | VIEW FULL LISTING</div>
+        <div class="property-photo-container">
+            <img class="property-photo" src="listing-photos/3131-w-donges-bay-rd.jpg"></img>
+        </div>
+        <div class="property-info-container">
+            <div class="city">${$city}</div>
+            <div class="rooms">${$br} br / ${$bath} bathrooms / ${$halfbath} half-bath</div>
+            <div class="price-address-container">
+                <div class="price">${$price} </div>
+                <div class="address">${$street}</div>
+            </div>
+            <div class="property-details">
+                <a href="mailto:karine@sewartrealestategroup.com?subject=Schedule showing at ${$street}">Schedule Showing</a> | <a href="#">View Full Listing</a>
+            </div>
+        </div>
     </div>`;
 
         $('.listings').append(payload);
+
+        } else {
+            let payload = 
+            
+            `<div class="listing">
+            <div class="property-photo-container">
+                <img class="property-photo" src="listing-photos/3131-w-donges-bay-rd.jpg"></img>
+            </div>
+            <div class="property-info-container">
+                <div class="city">${$city}</div>
+                <div class="rooms">${$br} br / ${$bath} bathrooms</div>
+                <div class="price-address-container">
+                    <div class="price">${$price} </div>
+                    <div class="address">${$street}</div>
+                </div>
+                <div class="property-details">
+                    <a href="mailto:karine@sewartrealestategroup.com?subject=Schedule showing at ${$street}">Schedule Showing</a> | <a href="#">View Full Listing</a>
+                </div>
+            </div>
+        </div>`;
+        
+                $('.listings').append(payload);
+        };
 
     };
 

@@ -97,6 +97,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    flex-direction: center;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
     border-bottom-style: solid;
@@ -110,7 +111,6 @@ a {
     margin-left: 10px;
     margin-bottom: 5px;
     margin-top: 10px;
-    min-width: 295px;
 }
 .instagram {
     margin-right: 10px;
@@ -297,7 +297,6 @@ a {
     margin-right: 20px;
 }
 .contact-logo{
-    display: inline;
     height: 10px;
 }
 .team-member{
@@ -320,60 +319,71 @@ a {
     font-size: medium;
     margin-bottom: 10px;
 }
-.bio{
-}
 
-
-.listings{
-    max-width: 800px;
+.listings {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-.listing{
-    max-width: 740px;
-    margin: 10px;
-}
-.listing-img-container{
-    max-width: 400px;
-    margin-right: 10px;
-    margin-bottom: 9px;
-}
-.listing-img{
-    max-width: 100%;
-    float: left;
-    margin-bottom: 10px;
-    margin-right: 15px;
-}
-.listing-neighborhood{
     font-family: 'Quicksand', sans-serif;
-    font-size: large;
 }
-.listing-specs{
-    font-family: 'Quicksand', sans-serif;
-    font-size: large;
+.listing {
+    max-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    border: dotted 1px lightgrey;
+    padding: 20px;
+}
+.property-photo-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-bottom: dotted 1px lightgrey;
+}
+.property-photo {
+    max-width: 280px;
+    display: block;
+}
+.property-info-container {
+    max-width: 370px;
+    flex-wrap: wrap;
+}
+.city{
+    font-size: x-large;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+.rooms{
     margin-top: 5px;
-}
-.listing-price{
-    font-family: 'Quicksand', sans-serif;
     font-size: large;
-    margin-top: 5px;
 }
-.listing-address{
-    font-family: 'Quicksand', sans-serif;
-    font-size: medium;
-    margin-bottom: 15px;
+.price-address-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: dotted 1px lightgrey;
 }
-.listing-description{
-    text-align: justify;
-    margin-bottom: 15px;
+.price{
+    font-size: xx-large;
+    margin-right: 5px;
 }
-.listing-links {
-    font-family: 'Quicksand', sans-serif;
-    font-size: small;
+.address{
+    font-size: 16px;
+    font-weight: bold;
+}
+.property-details{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+.property-details a:hover{
+    color: darkgrey;
 }
 
 html{
