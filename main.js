@@ -4,7 +4,7 @@
 //Get street address, city, state, zip code, price, photo URLS, bedrooms, bathrooms, square footage, home description
 //Build HTML
 
-const searchUrl = 'https://www.firstweber.com/homes-for-sale/Shorewood_combo/P_lp-cd-presentation/sc_l_listing_price+DESC/sd_S2/page_1//nts_100/';
+let searchUrl = 'https://www.firstweber.com/homes-for-sale/Shorewood_combo/P_lp-cd-presentation/sc_l_listing_price+DESC/sd_S2/page_1//nts_100/';
 
 function loadPropertyDetails() {
     $.get(searchUrl, function(data) {
@@ -126,6 +126,78 @@ function buildPreviews(filteredArray) {
 
 };
 
+function chooseNeighborhood() {
+    $('#mequon').on('click', function() {
+        $('.listings').empty();
+        let searchUrl = 'https://www.firstweber.com/homes-for-sale/Mequon_combo/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/page_1//nts_100/';
+        loadCommunityProperties(searchUrl);
+    });
+    $('#whitefishbay').on('click', function() {
+        $('.listings').empty();
+        let searchUrl = 'https://www.firstweber.com/homes-for-sale/whitefish+bay_combo/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/page_1//nts_100/';
+        loadCommunityProperties(searchUrl);
+    });
+    $('#riverhills').on('click', function() {
+        $('.listings').empty();
+        let searchUrl = 'https://www.firstweber.com/homes-for-sale/river+hills_combo/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/page_1//nts_100/';
+        loadCommunityProperties(searchUrl);
+    });
+    $('#shorewood').on('click', function() {
+        $('.listings').empty();
+        let searchUrl = 'https://www.firstweber.com/homes-for-sale/shorewood_combo/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/page_1//nts_100/';
+        loadCommunityProperties(searchUrl);
+    });
+    $('#foxpoint').on('click', function() {
+        $('.listings').empty();
+        let searchUrl = 'https://www.firstweber.com/homes-for-sale/fox+point_combo/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/page_1//nts_100/';
+        loadCommunityProperties(searchUrl);
+    });
+    $('#cedarburg').on('click', function() {
+        $('.listings').empty();
+        let searchUrl = 'https://www.firstweber.com/homes-for-sale/cedarburg_combo/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/page_1//nts_100/';
+        loadCommunityProperties(searchUrl);
+    });
+    $('#glendale').on('click', function() {
+        $('.listings').empty();
+        let searchUrl = 'https://www.firstweber.com/homes-for-sale/glendale_combo/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/page_1//nts_100/';
+        loadCommunityProperties(searchUrl);
+    });
+    $('#bayside').on('click', function() {
+        $('.listings').empty();
+        let searchUrl = 'https://www.firstweber.com/homes-for-sale/bayside_combo/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/page_1//nts_100/';
+        loadCommunityProperties(searchUrl);
+    });
+};
+
+function loadCommunityProperties(searchUrl) {
+    $.get(searchUrl, function(data) {
+
+        let streetAddresses = [];
+        let cityStates = [];
+        let prices = [];
+        let editedDetails = [];
+        let photoUrls = [];
+
+        $.each($(data).find('div.address'), function(i, val) {
+            streetAddresses.push(val.innerText);
+        });
+        $.each($(data).find('div.city'), function(i, val) {
+            cityStates.push(val.innerText);
+        });
+        $.each($(data).find('div.price'), function(i, val) {
+            prices.push((val.innerText).trim());
+        });
+        $.each($(data).find('div.bedbath'), function(i, val) {
+            let propertyDetails = val.innerText.trim();
+            let indexedDetails = propertyDetails.split("");
+            let detailObject = {br: indexedDetails[0], fullbath: indexedDetails[27], halfbath: indexedDetails[48]};
+            editedDetails.push(detailObject);
+        });
+        
+        compileData(streetAddresses, cityStates, prices, editedDetails);
+    });
+};
+
 function callZillow() {
 //streetAddresses and cityState are used to call Zillow API
 }
@@ -135,3 +207,4 @@ function buildPages() {
 };
 
 loadPropertyDetails();
+chooseNeighborhood();
