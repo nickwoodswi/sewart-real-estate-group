@@ -1,7 +1,7 @@
 //Pull source code for a given URL
 //Copy addresses for all search results
-//Get ZPID for all addresses from GetDeepSearchResults
-//Get street address, city, state, zip code, price, photo URLS, bedrooms, bathrooms, square footage, home description
+//Get ZPID for all addresses from GetDeepSearchResults API
+//Get photo URL, listing link from UpdatedPropertyDetails API
 //Build HTML
 
 let searchUrl = 'https://www.firstweber.com/homes-for-sale/Shorewood_combo/P_lp-cd-presentation/sc_l_listing_price+DESC/sd_S2/page_1//nts_100/';
@@ -32,6 +32,8 @@ function loadPropertyDetails() {
         });
         
         compileData(streetAddresses, cityStates, prices, editedDetails);
+        callAddresses(streetAddresses, cityStates);
+
     });
 };
 
@@ -198,13 +200,26 @@ function loadCommunityProperties(searchUrl) {
     });
 };
 
-function callZillow() {
-//streetAddresses and cityState are used to call Zillow API
-}
+function callAddresses(streetAddresses, cityStates) {
 
-function buildPages() {
-//Zillow API result is used to build new pages, place on SRG site, and update sitemap
+    for (let i = 0; i < streetAddresses.length; i++) {
+
+        let zillowSearchAddress = streetAddresses[i].split(' ').join('+');
+        let zillowSearchCity = cityStates[i].replace(',', '').split(' ').join('%2C+');
+
+        let zillowCallUrl = `http://www.zillow.com/webservice/GetDeepSearchResults.htm?zws-id=X1-ZWz17hci951dsb_2rqd6&address=${zillowSearchAddress}&citystatezip=${zillowSearchCity}`;
+
+        $.get(zillowCallUrl, function(data) {
+            console.log(data);
+        });
+
+    };
+        
 };
+
+// function buildPages() {
+// //Zillow API result is used to build new pages, place on SRG site, and update sitemap
+// };
 
 loadPropertyDetails();
 chooseNeighborhood();
