@@ -207,7 +207,7 @@ function callAddresses(streetAddresses, cityStates) {
         let zillowSearchAddress = streetAddresses[i].split(' ').join('+');
         let zillowSearchCity = cityStates[i].replace(',', '').split(' ').join('%2C+');
 
-        let zillowCallUrl = `http://www.zillow.com/webservice/GetDeepSearchResults.htm?zws-id=X1-ZWz17hci951dsb_2rqd6&address=${zillowSearchAddress}&citystatezip=${zillowSearchCity}`;
+        let zillowCallUrl = `https://www.zillow.com/webservice/GetDeepSearchResults.htm?zws-id=X1-ZWz17hci951dsb_2rqd6&address=${zillowSearchAddress}&citystatezip=${zillowSearchCity}`;
 
         $.get(zillowCallUrl, function(data) {
             console.log(data);
