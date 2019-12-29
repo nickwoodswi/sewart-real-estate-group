@@ -1,9 +1,3 @@
-//Pull source code for a given URL
-//Copy addresses for all search results
-//Get ZPID for all addresses from GetDeepSearchResults API
-//Get photo URL, listing link from UpdatedPropertyDetails API
-//Build HTML
-
 let searchUrl = 'https://www.firstweber.com/homes-for-sale/Shorewood_combo/P_lp-cd-presentation/sc_l_listing_price+DESC/sd_S2/page_1//nts_100/';
 
 function loadPropertyDetails() {
@@ -13,6 +7,7 @@ function loadPropertyDetails() {
         let cityStates = [];
         let prices = [];
         let editedDetails = [];
+        let propLinks = [];
         let photoUrls = [];
 
         $.each($(data).find('div.address'), function(i, val) {
@@ -30,14 +25,24 @@ function loadPropertyDetails() {
             let detailObject = {br: indexedDetails[0], fullbath: indexedDetails[27], halfbath: indexedDetails[48]};
             editedDetails.push(detailObject);
         });
+        $.each($(data).find('a.tilelink'), function(i, val) {
+            let link = val.href.split('/home-for-sale');
+            let fwLink = `http://firstweber.com/home-for-sale${link[1]}`;
+            propLinks.push(fwLink);
+        });
+        $.each($(data).find('div.property img'), function(i, val) {
+            let fullUrl = val.src;
+            let fullUrlSplitOne = fullUrl.split('=');
+            let fullUrlSplitTwo = fullUrlSplitOne[1].split('&');
+            let photoUrl = fullUrlSplitTwo[0];
+            photoUrls.push(photoUrl);
+        });
         
-        compileData(streetAddresses, cityStates, prices, editedDetails);
-        callAddresses(streetAddresses, cityStates);
-
+        compileData(streetAddresses, cityStates, prices, editedDetails, propLinks, photoUrls);
     });
 };
 
-function compileData(streetAddresses, cityStates, prices, editedDetails) {
+function compileData(streetAddresses, cityStates, prices, editedDetails, propLinks, previewPhotoUrls) {
     
     let propertiesArray = [];
 
@@ -48,6 +53,8 @@ function compileData(streetAddresses, cityStates, prices, editedDetails) {
              'rooms': editedDetails[i],
              'prices': prices[i],
              'street': streetAddresses[i],
+             'link': propLinks[i],
+             'photo': previewPhotoUrls[i]
         };
 
         propertiesArray.push(property);
@@ -55,13 +62,15 @@ function compileData(streetAddresses, cityStates, prices, editedDetails) {
     filterProperties(propertiesArray);
 };
 
-function filterProperties(propertiesArray) {
+function filterProperties(propertiesArray, previewPhotoUrls) {
     let filteredArray = [];
     for (i = 0; i < propertiesArray.length; i++) {
         if (propertiesArray[i].city && 
             propertiesArray[i].rooms && 
             propertiesArray[i].prices && 
-            propertiesArray[i].street) 
+            propertiesArray[i].street &&
+            propertiesArray[i].link &&
+            propertiesArray[i].photo) 
                 {filteredArray.push(propertiesArray[i])}
         };
     buildPreviews(filteredArray);
@@ -71,30 +80,32 @@ function buildPreviews(filteredArray) {
 
     for (i = 0; i < filteredArray.length; i++) {
 
-    let $city = filteredArray[i].city; 
-    let $price = filteredArray[i].prices;
-    let $street = filteredArray[i].street;
-    let $br = filteredArray[i].rooms.br;
-    let $bath = filteredArray[i].rooms.fullbath;
-    let $halfbath = filteredArray[i].rooms.halfbath;
+    let city = filteredArray[i].city; 
+    let price = filteredArray[i].prices;
+    let street = filteredArray[i].street;
+    let br = filteredArray[i].rooms.br;
+    let bath = filteredArray[i].rooms.fullbath;
+    let halfbath = filteredArray[i].rooms.halfbath;
+    let fulllisting = filteredArray[i].link;
+    let photo = filteredArray[i].photo;
 
-    if ($halfbath == true) {
+    if (halfbath == true) {
 
         let payload = 
             
     `<div class="listing">
         <div class="property-photo-container">
-            <img class="property-photo" src="listing-photos/3131-w-donges-bay-rd.jpg"></img>
+            <img class="property-photo" src="${photo}"></img>
         </div>
         <div class="property-info-container">
-            <div class="city">${$city}</div>
-            <div class="rooms">${$br} br / ${$bath} bathrooms / ${$halfbath} half-bath</div>
+            <div class="city">${city}</div>
+            <div class="rooms">${br} br / ${bath} bathrooms / ${halfbath} half-bath</div>
             <div class="price-address-container">
-                <div class="price">${$price} </div>
-                <div class="address">${$street}</div>
+                <div class="price">${price} </div>
+                <div class="address">${street}</div>
             </div>
             <div class="property-details">
-                <a href="mailto:karine@sewartrealestategroup.com?subject=Schedule showing at ${$street}">Schedule Showing</a> | <a href="#">View Full Listing</a>
+                <a href="mailto:karine@sewartrealestategroup.com?subject=Schedule showing at ${street}">Schedule Showing</a> | <a href="${fulllisting}">View Full Listing</a>
             </div>
         </div>
     </div>`;
@@ -106,17 +117,17 @@ function buildPreviews(filteredArray) {
             
             `<div class="listing">
             <div class="property-photo-container">
-                <img class="property-photo" src="listing-photos/3131-w-donges-bay-rd.jpg"></img>
+                <img class="property-photo" src="${photo}"></img>
             </div>
             <div class="property-info-container">
-                <div class="city">${$city}</div>
-                <div class="rooms">${$br} br / ${$bath} bathrooms</div>
+                <div class="city">${city}</div>
+                <div class="rooms">${br} br / ${bath} bathrooms</div>
                 <div class="price-address-container">
-                    <div class="price">${$price} </div>
-                    <div class="address">${$street}</div>
+                    <div class="price">${price} </div>
+                    <div class="address">${street}</div>
                 </div>
                 <div class="property-details">
-                    <a href="mailto:karine@sewartrealestategroup.com?subject=Schedule showing at ${$street}">Schedule Showing</a> | <a href="#">View Full Listing</a>
+                    <a href="mailto:karine@sewartrealestategroup.com?subject=Schedule showing at ${street}">Schedule Showing</a> | <a href="${fulllisting}">View Full Listing</a>
                 </div>
             </div>
         </div>`;
@@ -178,6 +189,7 @@ function loadCommunityProperties(searchUrl) {
         let cityStates = [];
         let prices = [];
         let editedDetails = [];
+        let propLinks = [];
         let photoUrls = [];
 
         $.each($(data).find('div.address'), function(i, val) {
@@ -195,26 +207,21 @@ function loadCommunityProperties(searchUrl) {
             let detailObject = {br: indexedDetails[0], fullbath: indexedDetails[27], halfbath: indexedDetails[48]};
             editedDetails.push(detailObject);
         });
-        
-        compileData(streetAddresses, cityStates, prices, editedDetails);
-    });
-};
-
-function callAddresses(streetAddresses, cityStates) {
-
-    for (let i = 0; i < streetAddresses.length; i++) {
-
-        let zillowSearchAddress = streetAddresses[i].split(' ').join('+');
-        let zillowSearchCity = cityStates[i].replace(',', '').split(' ').join('%2C+');
-
-        let zillowCallUrl = `https://www.zillow.com/webservice/GetDeepSearchResults.htm?zws-id=X1-ZWz17hci951dsb_2rqd6&address=${zillowSearchAddress}&citystatezip=${zillowSearchCity}`;
-
-        $.get(zillowCallUrl, function(data) {
-            console.log(data);
+        $.each($(data).find('a.tilelink'), function(i, val) {
+            let link = val.href.split('/home-for-sale');
+            let fwLink = `http://firstweber.com/home-for-sale${link[1]}`;
+            propLinks.push(fwLink);
         });
-
-    };
+        $.each($(data).find('div.property img'), function(i, val) {
+            let fullUrl = val.src;
+            let fullUrlSplitOne = fullUrl.split('=');
+            let fullUrlSplitTwo = fullUrlSplitOne[1].split('&');
+            let photoUrl = fullUrlSplitTwo[0];
+            photoUrls.push(photoUrl);
+        });
         
+        compileData(streetAddresses, cityStates, prices, editedDetails, propLinks, photoUrls);
+    });
 };
 
 // function buildPages() {
