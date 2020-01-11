@@ -15,7 +15,6 @@
 
 @media screen and (max-width: 570px) {
 
-    /* THIS IS WHAT I CHANGED HERE!!!!!!!!!!!!!!! */
     div.navwrapper {
         display: none;
     }
@@ -42,6 +41,27 @@
         width: 350px;
         margin: 10px;
     }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 25px;
+        width: 100%;
+    }
+    .neighborhood-photo-container {
+        width: 100%;
+    }
+    .neighborhood-photo {
+        width: 100%;
+    }
+    .header-text-container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 }
 
 @media all and (max-width:30em) {
@@ -62,6 +82,21 @@
     max-width: 100%;
     margin: 0;
     padding: 0;
+}
+.header-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+.neighborhood-photo-container{
+    width: 50%;
+}
+.neighborhood-photo{
+    width: 100%;
+}
+.header-text-container{
+    width: 50%;
+    margin: 25px;
 }
 
 p {
@@ -89,7 +124,7 @@ p {
     border-width: 1px;
     background-color: white;
     font-size: 16px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .sewart-real-estate-group-contacts {
@@ -206,6 +241,7 @@ a {
 .navwrapper {
     display: flex;
     position: sticky;
+    justify-content: center;
     top: 88px;
     background-color: white;
     margin-bottom: 5px;
@@ -396,6 +432,26 @@ a {
     background-color: #FFFFFF;
 }
 
+.price-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.price-header-container {
+    display: flex;
+}
+.price-header {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    border-bottom: solid 1px orange;
+}
+
 .listings {
     display: flex;
     flex-wrap: wrap;
@@ -412,6 +468,9 @@ a {
     margin: 20px;
     border: dotted 1px lightgrey;
     padding: 20px;
+}
+.noResults {
+    margin-bottom: 25px;
 }
 
 .property-photo-container {
@@ -473,9 +532,128 @@ a {
     color: darkgrey;
 }
 
-/* THIS IS WHAT I ADDED HERE BOIIIIIIIIIIIIIII */
 .mobileNav {
     display: block !important;
+}
+.neighborhoodsHidden {
+    display: none;
+}
+.neighborhoodsOpen {
+    display: block;
+    position: relative;
+    left: -276px;
+    top: 31px;
+}
+.neighborhoodDrop > a {
+    text-decoration: none;
+}
+.neighborhoodDrop > a:hover {
+    text-decoration: none;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+#drop1 {
+    position: absolute;
+    width: 275px;
+    height: 30px;
+    font-family: 'Quicksand', sans-serif;
+    border-left: dotted 1px lightgrey;
+    border-bottom: dotted 1px lightgrey;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
+}
+#drop2 {
+    position: absolute;
+    top: 31px;
+    width: 275px;
+    height: 30px;
+    font-family: 'Quicksand', sans-serif;
+    border-left: dotted 1px lightgrey;
+    border-bottom: dotted 1px lightgrey;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
+}
+#drop3 {
+    position: absolute;
+    top: 62px;
+    width: 275px;
+    height: 30px;
+    font-family: 'Quicksand', sans-serif;
+    border-left: dotted 1px lightgrey;
+    border-bottom: dotted 1px lightgrey;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
+}
+#drop4 {
+    position: absolute;
+    top: 93px;
+    width: 275px;
+    height: 30px;
+    font-family: 'Quicksand', sans-serif;
+    border-left: dotted 1px lightgrey;
+    border-bottom: dotted 1px lightgrey;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
+}
+#drop5 {
+    position: absolute;
+    top: 124px;
+    width: 275px;
+    height: 30px;
+    font-family: 'Quicksand', sans-serif;
+    border-left: dotted 1px lightgrey;
+    border-bottom: dotted 1px lightgrey;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
+}
+#drop6 {
+    position: absolute;
+    top: 155px;
+    width: 275px;
+    height: 30px;
+    font-family: 'Quicksand', sans-serif;
+    border-left: dotted 1px lightgrey;
+    border-bottom: dotted 1px lightgrey;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
+}
+#drop7 {
+    position: absolute;
+    top: 186px;
+    width: 275px;
+    height: 30px;
+    font-family: 'Quicksand', sans-serif;
+    border-left: dotted 1px lightgrey;
+    border-bottom: dotted 1px lightgrey;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
+}
+#drop8 {
+    position: absolute;
+    top: 217px;
+    width: 275px;
+    height: 30px;
+    font-family: 'Quicksand', sans-serif;
+    border-left: dotted 1px lightgrey;
+    border-bottom: dotted 1px lightgrey;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
 }
 
 html {

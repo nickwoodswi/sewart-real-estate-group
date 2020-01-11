@@ -4,8 +4,18 @@ function menuDrop() {
   });
 }
 
+function neighborhoodsDrop() {
+  $('#neighborhoods').on('click', function() {
+   let text = document.getElementById('neighborhoods');
+    if (text.innerHTML === '<a href="#" onclick="return false;">+ HOMES FOR SALE</a>') {
+      text.innerHTML = '<a href="#" onclick="return false;">- HOMES FOR SALE</a>'
+    } else {text.innerHTML = '<a href="#" onclick="return false;">+ HOMES FOR SALE</a>'};
+    $('.neighborhoodsHidden').toggleClass('neighborhoodsOpen');
+  })
+};
+
 let searchUrl =
-  'https://www.firstweber.com/homes-for-sale/Shorewood_combo/P_lp-cd-presentation/sc_l_listing_price+DESC/sd_S2/page_1//nts_100/';
+  'https://www.firstweber.com/homes-for-sale/Active%2CActiveWO%2CDelayed_list-status/68783_listing-sale-agents/pa_68783/nts_12/sd_S2/sc_lsearch_amt_search_price%2BDESC/';
 
 const neighborhoods = {
   '#mequon':
@@ -27,15 +37,24 @@ const neighborhoods = {
 };
 
 function loadPropertyDetails(url) {
-  $.get(url, function(data) {
+  fetch(url)
+  .then((response) => {
+    return response.text();
+  })
+  .then ((pageSource) => {
     const properties = [];
-    $.each($(data), function(_, element) {
+    $.each($(pageSource), function(_, element) {
       if (element.id === 'pagewrap') {
         const $listing = $(element).find('.props_summary .property');
         $listing.each(function(i, property) {
           const street = $(property)
             .find('.address')
             .text();
+          const streetSubj = $(property)
+            .find('.address')
+            .text()
+            .split(" ")
+            .join("%20");
           const city = $(property)
             .find('.city')
             .text();
@@ -53,7 +72,7 @@ function loadPropertyDetails(url) {
               return string.trim();
             });
           const rooms = { bedrooms, full, half };
-          const link = `http://firstweber.com/home-for-sale${$(property)
+          const link = `http://firstweber.com/${$(property)
             .find('.tilelink')
             .attr('href')}`;
           const photo = $(property)
@@ -67,7 +86,7 @@ function loadPropertyDetails(url) {
             photo &&
             Object.values(rooms).filter(value => value).length >= 2
           )
-            properties.push({ street, city, price, rooms, link, photo });
+            properties.push({ street, city, price, rooms, link, photo, streetSubj });
         });
       }
     });
@@ -76,7 +95,7 @@ function loadPropertyDetails(url) {
 }
 function buildPreviews(properties) {
   const payload = properties.map(property => {
-    const { city, price, street, link, photo } = property;
+    const { city, price, street, link, photo, streetSubj } = property;
     const { bedrooms, full, half } = property.rooms;
     const rooms = half
       ? `${bedrooms} / ${full} / ${half}</div>`
@@ -93,7 +112,7 @@ function buildPreviews(properties) {
                 <div class="address">${street}</div>
             </div>
             <div class="property-details">
-                <a href="mailto:agent@realestateagency.com?subject=Schedule showing at ${street}">Schedule Showing</a> | <a href="${link}">View Full Listing</a>
+                <a href="mailto:ksewart@firstweber.com?subject=Schedule%20showing%20at%20${streetSubj}">Schedule Showing</a> | <a href="${link}">View Full Listing</a>
             </div>
         </div>
     </div>`;
@@ -111,3 +130,4 @@ function chooseNeighborhood() {
 loadPropertyDetails(searchUrl);
 menuDrop();
 chooseNeighborhood();
+neighborhoodsDrop();
