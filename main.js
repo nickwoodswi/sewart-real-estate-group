@@ -1,22 +1,15 @@
+//STYLES SITE NAVIGATION FOR MOBILE DEVICES
 function menuDrop() {
   $('.menu-button-container').on('click', function() {
     $('.navwrapper').toggleClass('mobileNav');
   });
 }
 
-function neighborhoodsDrop() {
-  $('#neighborhoods').on('click', function() {
-   let text = document.getElementById('neighborhoods');
-    if (text.innerHTML === '<a href="#" onclick="return false;">+ HOMES FOR SALE</a>') {
-      text.innerHTML = '<a href="#" onclick="return false;">- HOMES FOR SALE</a>'
-    } else {text.innerHTML = '<a href="#" onclick="return false;">+ HOMES FOR SALE</a>'};
-    $('.neighborhoodsHidden').toggleClass('neighborhoodsOpen');
-  })
-};
-
+//LOADS INITIAL SEARCH RESULTS TO FRONT PAGES
 let searchUrl =
   'https://www.firstweber.com/homes-for-sale/Active%2CActiveWO%2CDelayed_list-status/68783_listing-sale-agents/pa_68783/nts_12/sd_S2/sc_lsearch_amt_search_price%2BDESC/';
 
+//SETS MARKETS FOR SEARCH FROM BROKER WEBSITE
 const neighborhoods = {
   '#mequon':
     'https://www.firstweber.com/homes-for-sale/Mequon_combo/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/page_1//nts_100/',
@@ -36,12 +29,13 @@ const neighborhoods = {
     'https://www.firstweber.com/homes-for-sale/bayside_combo/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/page_1//nts_100/',
 };
 
+//LOADS AND FORMATS FRONT-END CODE FROM BROKER SEARCH RESULTS
 function loadPropertyDetails(url) {
   fetch(url)
-  .then((response) => {
-    return response.text();
-  })
-  .then ((pageSource) => {
+    .then((response) => {
+      return response.text();
+    })
+    .then ((pageSource) => {
     const properties = [];
     $.each($(pageSource), function(_, element) {
       if (element.id === 'pagewrap') {
@@ -93,6 +87,8 @@ function loadPropertyDetails(url) {
     buildPreviews(properties);
   });
 }
+
+//BUILDS DISPLAYS IN THE DOM FROM FRONT END SEARCH CODE
 function buildPreviews(properties) {
   const payload = properties.map(property => {
     const { city, price, street, link, photo, streetSubj } = property;
@@ -119,6 +115,8 @@ function buildPreviews(properties) {
   });
   $('.listings').html(payload);
 }
+
+//ENABLES THE USER TO LOAD A NEW SEARCH
 function chooseNeighborhood() {
   Object.keys(neighborhoods).forEach(id => {
     $(id).on('click', function() {
