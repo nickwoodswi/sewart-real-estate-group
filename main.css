@@ -1,0 +1,910 @@
+html{
+    background: url(./images/background-image.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+.pageContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*NAVIGATION*/
+
+@media all and (max-width: 770px) {
+    .nav-container{
+        flex-direction: column;
+    }
+    .agency-contacts{
+        width: 100%;
+        justify-content: space-evenly !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-links{
+        width: 100%;
+    }
+    .agency-logo-container{
+        width: 100%;
+    }
+    .agency-logo{
+        margin-left: 5px !important;
+    }
+    .broker-resources{
+        justify-content: center;
+        width: 100%;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+}
+
+.nav-container{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+    .agency-logo-container{
+        display: flex;
+        justify-content: center;
+    }
+        .agency-logo{
+            display: flex;
+            justify-content: flex-start;
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+            white-space: nowrap;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+        .agency-logo a{
+            color: white;
+            text-decoration: none;
+        } 
+        .agency-logo h1{
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+            .agency-logo h1:hover{
+                opacity: .5;
+            }
+
+
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+        .agency-contacts{
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 15px;
+            margin-top: 7px;
+        }
+            .agency-contacts img{
+                height: 16px;
+                width: auto;
+                margin-right: 15px;
+            }
+            .agency-contacts img:hover{
+                opacity: .5;
+            }
+
+        .broker-resources{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 15px;
+        }
+            .broker-logo img{
+                height: 24px;
+                width: auto;
+                margin-right: 15px;
+                margin-top: 3px;
+            }
+                .broker-logo img:hover {
+                    opacity: .5;
+                }
+            .neighborhood-selector{
+                width: 225px;
+                height: 24px;
+                font-size: 16px;
+                font-weight: bold;
+                font-family: 'Quicksand', sans-serif;
+            }
+
+
+/*INDEX MAIN*/
+
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+    .index-buttons{
+        text-align: center;
+        position: absolute;
+        width: 276px;
+        height: 170px;
+        top: 212px;
+        font-family: 'Quicksand', sans-serif;
+        padding: 20px;
+        border: solid 2px darkgrey;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+
+/*LEARN VIEW*/
+
+@media all and (max-width: 770px) {
+
+}
+
+@media all and (min-width: 800px) {
+    .team-section{
+        width: 770px !important;
+    }
+    .lead-member{
+        width: 770px !important;
+    }
+    .team-member{
+        width: 350px !important;
+        margin: 5px;
+    }
+}
+
+#scroll-up-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.team-container{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+    .headshot{
+        padding-right: 10px;
+        margin-bottom: 10px;
+    }
+    .headshot img{
+        box-shadow: 5px 5px 5px lightgrey;
+    }
+    .intro-lead-container{
+        width: 100%;
+        background-image: url(./images/pool-image.jpeg);
+        background-size: cover;
+        box-shadow: inset 0 700px 9px -7px rgba(255, 255, 255, 0.87);
+    }
+
+    .team-intro{
+        width: 100%;
+        box-shadow: 0px 0px 20px 5px darkgrey;
+    }
+    .team-intro-text{
+        /* margin-top: 200px; */
+        /* margin-bottom: 150px; */
+        max-width: 700px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Quicksand', sans-serif;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    .team-intro h3{
+        font-size: 36px;
+    }
+    .team-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        padding-top: 25px;
+    }
+    .lead-member{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-family: 'Quicksand', sans-serif;
+        width: 100%;
+        max-width: 730px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8)
+    }
+        .lead-member-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+        }
+            .lead-member a{
+                color: black;
+                font-size: 15px;
+            }
+            .lead-member img{
+                width: 150px;
+            }
+            .lead-member-header .headshot{
+                margin-left: 10px;
+            }
+            .lead-member-title{
+            }
+                .lead-member-title h3{
+                    font-size: 44px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                .lead-member-title h4{
+                    font-size: 22px;
+                    margin-top: 0;
+                }
+                .lead-bio{
+                }
+            .contact-logos img{
+                width: 15px;
+            }
+    .team-member{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-family: 'Quicksand', sans-serif;
+        margin-top: 15px;
+        max-width: 730px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+    }
+        .team-member-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+        }
+            .team-member img{
+                width: 150px;
+            }
+            .team-member-title{
+            }
+                .team-member-title h3{
+                    font-size: 40px;
+                    margin:0;
+                }
+                .team-member-title h4{
+                    font-size: 18px;
+                    margin:0;
+                }
+                .bio{
+                    margin-top: 0;
+                }
+    .process-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 20px 5px lightgrey;
+        font-family: 'Quicksand', sans-serif
+    }
+        .process-intro{
+            width: 100%;
+            max-width: 450px;
+            padding: 10px;
+        }
+            .process-container h3{
+                font-size: 36px;
+            }
+        .chart-container{
+            display: flex;
+            justify-content: center;
+        }
+            #chart{
+                max-height: 400px;
+                margin: 25px;
+            }
+    
+.process-subcontainer{
+    width: 100%;
+    margin: 0;
+}
+.agency{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+    .agency-img-container img{
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        box-shadow: -10px 10px 10px lightgrey;
+    }
+    .agency-intro{
+        max-width: 450px;
+    }
+    .agency-intro h4{
+        text-align: center;
+        font-size: 24px;
+        margin: 0;
+    }
+
+
+/*BUY VIEW*/
+
+
+.buy-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.664);
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif
+}
+    .buy-intro-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        width: 100%;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+        .buy-headline-container{
+            width: 100%;
+            max-width: 470px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+            .view-headline h1{
+                margin: 0;
+                margin-bottom: 15px;
+            }
+        .buy-intro{
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 100px;
+            text-align: left;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5)
+        }
+
+.buyers-content{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Quicksand', sans-serif
+}
+.buyer-agency{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: -1;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+    .buyer-agency-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-image: url('./images/lrge-ext.jpeg');
+        background-size: cover;
+        color: black;
+        padding-top: 40px;
+    }
+    .buyer-agency-text{
+        width: 100%;
+        max-width: 600px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 30px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        background-color: rgb(255, 255, 255, 0.9);
+        box-shadow: 10px 10px 10px (0, 0, 0, 0.5);
+    }
+
+@media all and (max-width: 660px){
+    .market-section{
+        flex-wrap: wrap;
+    }
+    .market-section-header{
+        width: 100% !important;
+    }
+    .buyer-agency-text{
+        margin-bottom: 0px;
+    }
+}
+
+.market-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+    .market-section-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(0, 0, 0, 0.5);
+        width: 320px;
+        font-size: 14px;
+        text-align: center;
+    }
+        .market-section-header-text{
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 320px;
+            padding-top: 50px;
+            padding-bottom: 30px;
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    .market-section-text-container{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(255, 255, 255, 0.8);
+    }
+        .market-section-text{
+            width: 100%;
+            padding-right: 35px;
+            padding-left: 35px;
+            padding-top: 30px;
+            padding-bottom: 15px;
+        }
+.offer-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+    .offer-section-header{
+        width: 100%;
+        max-width: 470px;
+        background-color: lightgrey;
+        padding-left: 30px;
+    }
+    .offer-section-text{
+        width: 100%;
+        max-width: 470px;
+        background-color: rgb(0, 0, 0, 0.8)
+    }
+
+/*SELL VIEW*/
+
+
+.selling-header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0, .5);
+    z-index: 1;
+}
+    .selling-header-container{
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .selling-header-text{
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(255, 255, 255, .9);
+        padding: 25px;
+    }
+
+.selling-page-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+    .staging-section{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        background-image: url('./images/Great_Room.JPG');
+        background-size: cover;
+        background-position: center;
+        font-family: 'Quicksand', sans-serif
+    }
+        .staging-section-header{
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+            .staging-section-header-text{
+                background-color: rgb(255, 255, 255, 0.9);
+                padding: 75px;
+                text-align: center;
+            }
+        .staging-section-text{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 500px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+            .staging-section-text-container{
+                padding-top: 50px;
+                padding-right: 25px;
+                padding-left: 25px;
+                padding-bottom: 25px;
+            }
+    .valuation-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        font-family: 'Quicksand', sans-serif;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 5px 10px rgb(0, 0, 0, .5);
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+        .valuation-header{
+            display: flex;
+            justify-content: center;
+            max-width: 300px;
+            text-align: center;
+            padding: 25px;
+        }
+        .valuation-text{
+            max-width: 300px;
+        }
+
+    .selling-high-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 100%;
+        font-family: 'Quicksand', sans-serif
+    }
+        .selling-high-header{
+            text-align: right;
+            width: 100%;
+            padding: 25px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .selling-high-text{
+            padding-right: 25px;
+            padding-left: 25px;
+            padding-top: 25px;
+            color: white;
+            padding-bottom: 50px;
+            background-color: rgb(0, 0, 0, .7)
+        }
+
+/*LISTINGS*/
+
+
+.listings-header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 110px;
+}
+    .header-intro-container{
+        background-color: rgba(255, 255, 255, 0.9);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        max-width: 700px;
+        padding-bottom: 50px;
+        padding-top: 40px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+        .view-headline{
+            width: 100%;
+        }
+            .view-headline h2{
+                font-size: 36px;
+                text-decoration: orange underline;
+            }
+        .header-intro{
+            width: 100%;
+            max-width: 600px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+    .listings{
+        background-color:rgb(255, 255, 255, 0.95);
+        width: 100%;
+        max-width: 665px;
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+
+.listing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(255, 255, 255, 0.95);
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+}
+.property-photo-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+    .property-photo-container img {
+        padding: 5px;
+        max-width: 275px;
+        box-shadow: -5px 5px 5px lightgrey;
+    }
+.property-info-container{
+    margin-bottom: 5px;
+}
+.price-address-container{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted darkgrey
+}
+    .price{
+        font-weight: bold;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    .address{
+        margin-top: 2px;
+    }
+    .property-details {
+        margin-top: 5px;
+    }
+.city{
+    font-size: 24px;
+}
+.listing a{
+    color: black
+}
+
+
+/*BUTTONS*/
+
+
+.page-button-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    margin-bottom: 15px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.calculator-button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+#finance-button-container{
+    margin-top: 15px;
+}
+
+#scroll-up-button{
+    position: fixed;
+    bottom: 8px;
+    right: 10px;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 8px;
+    height: 15px;
+}
+    #scroll-up-button:after{
+        background-color: rgb(0, 0, 0, .5)
+    }
+
+.button {
+
+    display: inline-block;
+    padding: 1rem 1.25rem;
+    border-radius: .1rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0px;
+    border: white dotted 1px;
+  }
+  .button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: .1rem;
+    z-index: -2;
+  }
+  .button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(46, 46, 46);
+    transition: all .3s;
+    border-radius: .1rem;
+    z-index: -1;
+  }
+  .button:hover {
+    color: #fff;
+  }
+  .button:hover:before {
+    width: 100%;
+  }
+  .button a{
+      text-decoration: none;
+      color: white;
+  }
+
+/*CALCULATOR*/
+
+.mortgage-calculator-container{
+    width: 95%;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+    .mortgage-calculator{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 350px;
+        border: solid 1px lightgrey;
+        background-color: rgb(255, 255, 255, 0.2);
+        box-shadow: -5px 5px 10px lightgrey;
+        padding: 10px;
+    }
+        .mortgage-calculator-header{}
+            .mortgage-calculator-header h4{
+                margin:0;
+                margin-bottom: 10px;
+                text-decoration: underline orange;
+                font-size: 21px;
+            }
+        .mortgage-calculator-detail{
+            display: flex;
+            width: 320px;
+            margin-top: 10px;
+        }
+            .mortgage-calculator-inputs{
+                display: flex;
+                flex-wrap: wrap;
+            }
+                .mortgage-calculator-inputs input{
+                }
+                .mortgage-calculator-inputs select{
+                }
+                .mortgage-calculator-inputs button{
+                    margin-bottom: 10px;
+                }
+            .mortgage-calculator-result{
+                display: flex;
+                flex-wrap: wrap;
+            }
+                .result-header{
+                    margin-bottom: 10px;
+                }
+                .result{
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    width: 100%;
+                    font-size: 30px;
+                }
+                .suggested-property-intro{
+                    margin-bottom: 10px;
+                }
+                .suggested-property-detail{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    width: 100%;
+                    font-size: 14px;
+                }
+                    .suggested-property-image img{
+                        margin: 0;
+                        margin-bottom: 5px;
+                        width: 100%;
+                        box-shadow: -10px 10px 10px lightgrey
+                    }
+                        .suggested-property-info h3{
+                            margin: 0;
+                        }
+                        .suggested-property-info h4{
+                            margin: 0;
+                        }
+                        .suggested-property-info a{
+                            text-decoration: none;
+                            font-weight: bold;
+                            color: white;
+                        }
