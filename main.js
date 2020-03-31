@@ -13,7 +13,6 @@ function loadIndex() {
             </div>
         </div>`
     )
-    console.log('loadIndex listening')
 };
 function viewIndex() {
     $('.pageContent').html(`
@@ -28,7 +27,6 @@ function viewIndex() {
             </div>
         </div>`
     );
-    console.log('viewIndex listening')
 }
 
 function viewBuy() {
@@ -143,7 +141,6 @@ function viewBuy() {
         viewBuy();
         viewSell();
         viewLearn();
-        console.log('viewBuy listening')
     })
 }
 
@@ -247,7 +244,6 @@ function viewSell() {
         viewBuy();
         viewSell();
         viewLearn();
-        console.log('viewSell listening')
     })
 }
 
@@ -675,6 +671,42 @@ function handleDropClick() {
     })
 }
 
+function handleMilPriceFilter() {
+  $('#mil-price-filter').on('click', function() {
+      let value = $(this).val()
+      console.log(value)
+      let idString = value.toLowerCase()
+      let despacedIdString = idString.replace(/\s/g, '');
+      let id = `#onemil`+despacedIdString
+      Object.keys(neighborhoods)
+      chooseNeighborhood(id, value)
+  })
+}
+
+function handleFiveKPriceFilter() {
+  $('#5k-price-filter').on('click', function() {
+      let value = $(this).val()
+      console.log(value)
+      let idString = value.toLowerCase()
+      let despacedIdString = idString.replace(/\s/g, '');
+      let id = `#fivek`+despacedIdString
+      Object.keys(neighborhoods)
+      chooseNeighborhood(id, value)
+  })
+}
+
+function handleZeroPriceFilter() {
+  $('#zero-price-filter').on('click', function() {
+      let value = $(this).val()
+      console.log(value)
+      let idString = value.toLowerCase()
+      let despacedIdString = idString.replace(/\s/g, '');
+      let id = `#zero`+despacedIdString
+      Object.keys(neighborhoods)
+      chooseNeighborhood(id, value)
+  })
+}
+
 function chooseNeighborhood(id, value) {
     let neighborhoodsArray = Object.entries(neighborhoods)
     neighborhoodsArray.map(neighborhood => {
@@ -708,6 +740,54 @@ const neighborhoods = {
     'https://www.firstweber.com/homes-for-sale/glendale_combo/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/page_1//nts_100/',
   '#bayside':
     'https://www.firstweber.com/homes-for-sale/bayside_combo/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/page_1//nts_100/',
+  '#onemilmequon':
+    'https://www.firstweber.com/homes-for-sale/mequon_combo/1000000_search-price-low/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+ '#fivekmequon':
+    'https://www.firstweber.com/homes-for-sale/mequon_combo/500000_search-price-low/999999_search-price-high/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+  '#zeromequon':
+    'https://www.firstweber.com/homes-for-sale/mequon_combo/0_search-price-low/499999_search-price-high/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+  '#onemilbayside':
+    'https://www.firstweber.com/homes-for-sale/bayside_combo/1000000_search-price-low/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+ '#fivekbayside':
+    'https://www.firstweber.com/homes-for-sale/bayside_combo/500000_search-price-low/999999_search-price-high/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+  '#zerobayside':
+    'https://www.firstweber.com/homes-for-sale/bayside_combo/0_search-price-low/499999_search-price-high/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+  '#onemilcedarburg':
+    'https://www.firstweber.com/homes-for-sale/cedarburg_combo/1000000_search-price-low/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+ '#fivekcedarburg':
+    'https://www.firstweber.com/homes-for-sale/cedarburg_combo/500000_search-price-low/999999_search-price-high/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+  '#zerocedarburg':
+    'https://www.firstweber.com/homes-for-sale/cedarburg_combo/0_search-price-low/499999_search-price-high/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+  '#onemilfoxpoint':
+    'https://www.firstweber.com/homes-for-sale/fox+point_combo/1000000_search-price-low/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+ '#fivekfoxpoint':
+    'https://www.firstweber.com/homes-for-sale/fox+point_combo/500000_search-price-low/999999_search-price-high/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+  '#zerofoxpoint':
+    'https://www.firstweber.com/homes-for-sale/fox+point_combo/0_search-price-low/499999_search-price-high/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+  '#onemilglendale':
+    'https://www.firstweber.com/homes-for-sale/glendale_combo/1000000_search-price-low/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+ '#fivekglendale':
+    'https://www.firstweber.com/homes-for-sale/glendale_combo/500000_search-price-low/999999_search-price-high/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+  '#zeroglendale':
+    'https://www.firstweber.com/homes-for-sale/glendale_combo/0_search-price-low/499999_search-price-high/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+  '#onemilriverhills':
+    'https://www.firstweber.com/homes-for-sale/river+hills_combo/1000000_search-price-low/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+ '#fivekriverhills':
+    'https://www.firstweber.com/homes-for-sale/river+hills_combo/500000_search-price-low/999999_search-price-high/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+  '#zeroriverhills':
+    'https://www.firstweber.com/homes-for-sale/river+hills_combo/0_search-price-low/499999_search-price-high/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+  '#onemilshorewood':
+    'https://www.firstweber.com/homes-for-sale/Shorewood_combo/1000000_search-price-low/Shorewood+Drive+Oshkosh%2C+WI+54901_cbd/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+ '#fivekshorewood':
+    'https://www.firstweber.com/homes-for-sale/Shorewood_combo/500000_search-price-low/999999_search-price-high/Shorewood+Drive+Oshkosh%2C+WI+54901_cbd/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+  '#zeroshorewood':
+    'https://www.firstweber.com/homes-for-sale/Shorewood_combo/0_search-price-low/499999_search-price-high/Shorewood+Drive+Oshkosh%2C+WI+54901_cbd/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+  '#onemilwhitefishbay':
+    'https://www.firstweber.com/homes-for-sale/Whitefish+Bay_combo/1000000_search-price-low/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+ '#fivekwhitefishbay':
+    'https://www.firstweber.com/homes-for-sale/Whitefish+Bay_combo/500000_search-price-low/999999_search-price-high/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/',
+  '#zerowhitefishbay':
+    'https://www.firstweber.com/homes-for-sale/Whitefish+Bay_combo/0_search-price-low/499999_search-price-high/P_lp-cd-presentation/sc_l_listing_price+DESC/sd_S2/'
 };
 
 function loadPropertyDetails(url, value) {
@@ -779,6 +859,11 @@ function buildPreviews(properties, value) {
           <div id="sell-button" class="button">SELL</div>
           <div id="learn-button" class="button">LEARN</div>
         </div>
+        <div class="page-button-container">
+          <button id="mil-price-filter" value="${value}" class="button">$1,000,000+</button>
+          <button id="5k-price-filter" value="${value}" class="button">$500,000-$999,999</button>
+          <button id="zero-price-filter" value="${value}" class="button">UP TO $499,999</button>
+        </div>
       </div>
     </div>`
 
@@ -817,6 +902,9 @@ function buildPreviews(properties, value) {
   viewBuy();
   viewSell();
   viewLearn();
+  handleMilPriceFilter();
+  handleFiveKPriceFilter();
+  handleZeroPriceFilter();
 }
 
 handleDropClick();
