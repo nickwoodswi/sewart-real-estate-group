@@ -153,9 +153,9 @@ function viewSell() {
             <div class="selling-header-container">
               <h2>SELLING A HOME</h2>
               <div class="page-button-container">
-                <div id="staging-button" class="button">STAGING</div>
-                <div id="valuation-button" class="button">VALUATION</div>
-                <div id="sell-high-button" class="button">SELLING HIGH</div>
+                <div id="staging-button" class="button"><a href="#staging">STAGING</a></div>
+                <div id="valuation-button" class="button"><a href="#valuation">VALUATION</a></div>
+                <div id="sell-high-button" class="button"><a href="#sellinghigh">SELLING HIGH</a></div>
               </div>
             </div>
 
@@ -174,7 +174,7 @@ function viewSell() {
 
           <div class="selling-page-content">
 
-            <div class="staging-section">
+            <div id="staging" class="staging-section">
               <div class="staging-section-header">
                 <div class="staging-section-header-text"><h2>STAGING</h2></div>
               </div>
@@ -200,7 +200,7 @@ function viewSell() {
               </div>
             </div>
 
-            <div class="valuation-section">
+            <div id="valuation" class="valuation-section">
             
               <div class="valuation-header">
                 <h2>WHAT'S A HOME WORTH?</h2>
@@ -224,7 +224,7 @@ function viewSell() {
               </div>
             </div>
 
-            <div class="selling-high-section">
+            <div id="sellinghigh" class="selling-high-section">
             
               <div class="selling-high-header">
                 <h2>GETTING THE MOST FROM YOUR SALE</h2>
