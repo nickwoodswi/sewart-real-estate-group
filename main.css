@@ -56,25 +56,30 @@ body{
     position: fixed;
     width: 100%;
     z-index: 2;
+    padding-bottom: 15px;
 }
 
     .agency-logo-container{
         display: flex;
         justify-content: center;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 25px;
+        padding-top: 10px;
     }
         .agency-logo{
             display: flex;
             justify-content: flex-start;
             font-family: 'Quicksand', sans-serif;
-            color: white;
             white-space: nowrap;
             margin-top: 15px;
-            margin-left: 15px;
         }
-        .agency-logo a{
-            color: white;
-            text-decoration: none;
-        } 
+            .agency-logo img{
+                height: 50px;
+            }
+                .agency-logo img:hover{
+                    opacity: 75%;
+                }
         .agency-logo h1{
             font-size: 18px;
             margin-top: 0;
@@ -94,7 +99,7 @@ body{
         .agency-contacts{
             display: flex;
             justify-content: flex-start;
-            margin-left: 15px;
+            padding-top: 15px;
             margin-top: 7px;
         }
             .agency-contacts img{
@@ -111,6 +116,7 @@ body{
             flex-direction: row;
             align-items: center;
             margin-left: 15px;
+            padding-top: 18px;
         }
             .broker-logo img{
                 height: 24px;
@@ -139,13 +145,14 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    top: 30px;
 }
     .index-buttons{
         text-align: center;
         position: absolute;
         width: 276px;
-        height: 170px;
-        top: 212px;
+        height: 200px;
+        top: 190px;
         font-family: 'Quicksand', sans-serif;
         padding: 20px;
         border: solid 2px darkgrey;
@@ -172,6 +179,10 @@ body{
     }
 }
 
+#scroll-up-button{
+    margin-bottom: 0px;
+    z-index: 2
+}
 #scroll-up-button a{
     text-decoration: none;
     color: white;
@@ -184,6 +195,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-bottom: 30px;
 }
     .headshot{
         padding-right: 10px;
@@ -303,6 +315,13 @@ body{
                 .bio{
                     margin-top: 0;
                 }
+                .contact-logos img{
+                    width: 15px;
+                    margin-top: 15px;
+                }
+                    .contact-logos a{
+                        color: black;
+                    }
     .process-container{
         display: flex;
         flex-wrap: wrap;
@@ -366,9 +385,12 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.664);
+    background-color: rgba(255, 255, 255, 0.8);
     margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
     font-family: 'Quicksand', sans-serif
 }
@@ -378,8 +400,8 @@ body{
         justify-content: center;
         align-items: center;
         margin-top: 100px;
+        margin-bottom: 100px;
         width: 100%;
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
     }
         .buy-headline-container{
             width: 100%;
@@ -390,22 +412,27 @@ body{
             .view-headline h1{
                 margin: 0;
                 margin-bottom: 15px;
+                text-decoration: underline orange
             }
-        .buy-intro{
+        .buy-intro-text{
+            display: flex;
+            align-items: center;
             width: 100%;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 100px;
             text-align: left;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.5)
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: rgb(255, 255, 255, 0.8);
         }
 
 .buyers-content{
     display: flex;
     flex-wrap: wrap;
-    font-family: 'Quicksand', sans-serif
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(255, 255, 255, 0.8);
 }
 .buyer-agency{
     width: 100%;
@@ -414,8 +441,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    z-index: -1;
-    background-color: rgb(255, 255, 255, 0.8);
+    margin-bottom: 150px;
 }
     .buyer-agency-header{
         display: flex;
@@ -423,11 +449,14 @@ body{
         justify-content: center;
         align-items: center;
         width: 100%;
-        background-image: url('./images/lrge-ext.jpeg');
+        background-color: rgba(255, 255, 255, .1);
         background-size: cover;
         color: black;
-        padding-top: 40px;
+        padding: 15px;
     }
+        .buyer-agency-header h2 {
+            text-align: center
+        }
     .buyer-agency-text{
         width: 100%;
         max-width: 600px;
@@ -441,74 +470,10 @@ body{
     }
 
 @media all and (max-width: 660px){
-    .market-section{
-        flex-wrap: wrap;
-    }
-    .market-section-header{
-        width: 100% !important;
-    }
     .buyer-agency-text{
         margin-bottom: 0px;
     }
 }
-
-.market-section{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-    .market-section-header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: rgb(0, 0, 0, 0.5);
-        width: 320px;
-        font-size: 14px;
-        text-align: center;
-    }
-        .market-section-header-text{
-            text-align: center;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: 320px;
-            padding-top: 50px;
-            padding-bottom: 30px;
-            color: white;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    .market-section-text-container{
-        display: flex;
-        justify-content: center;
-        background-color: rgb(255, 255, 255, 0.8);
-    }
-        .market-section-text{
-            width: 100%;
-            padding-right: 35px;
-            padding-left: 35px;
-            padding-top: 30px;
-            padding-bottom: 15px;
-        }
-.offer-section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgb(255, 255, 255, 0.8);
-}
-    .offer-section-header{
-        width: 100%;
-        max-width: 470px;
-        background-color: lightgrey;
-        padding-left: 30px;
-    }
-    .offer-section-text{
-        width: 100%;
-        max-width: 470px;
-        background-color: rgb(0, 0, 0, 0.8)
-    }
 
 /*SELL VIEW*/
 
@@ -521,9 +486,9 @@ body{
     width: 100%;
     margin-top: 50px;
     font-family: 'Quicksand', sans-serif;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 100px;
-    box-shadow: 0px 10px 10px rgb(0, 0, 0, .5);
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 1;
 }
     .selling-header-container{
@@ -536,6 +501,9 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
+        .selling-header-container h1{
+            text-decoration: underline orange
+        }
     .selling-header-text{
         width: 100%;
         max-width: 600px;
@@ -548,6 +516,7 @@ body{
 .selling-page-content{
     display: flex;
     flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, .9);
     width: 100%;
 }
     .staging-section{
@@ -555,23 +524,18 @@ body{
         flex-wrap: wrap;
         width: 100%;
         justify-content: space-evenly;
-        background-image: url('./images/Great_Room.JPG');
-        background-size: cover;
-        background-position: center;
-        font-family: 'Quicksand', sans-serif
+        font-family: 'Quicksand', sans-serif;
+        background-color: rgba(255, 255, 255, .5)
     }
         .staging-section-header{
             width: 100%;
-            max-width: 500px;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-top: 25px;
-            margin-bottom: 25px;
         }
             .staging-section-header-text{
-                background-color: rgb(255, 255, 255, 0.9);
-                padding: 75px;
+                padding: 25px;
                 text-align: center;
             }
         .staging-section-text{
@@ -580,14 +544,11 @@ body{
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            max-width: 500px;
-            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            padding: 15px;
         }
             .staging-section-text-container{
-                padding-top: 50px;
-                padding-right: 25px;
-                padding-left: 25px;
-                padding-bottom: 25px;
+                margin-bottom: 25px;
             }
     .valuation-section{
         display: flex;
@@ -598,25 +559,25 @@ body{
         font-family: 'Quicksand', sans-serif;
         background-color: rgba(255, 255, 255, 0.9);
         box-shadow: 0px 5px 10px rgb(0, 0, 0, .5);
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 25px;
+        padding-bottom: 10px;
     }
         .valuation-header{
             display: flex;
             justify-content: center;
             max-width: 300px;
             text-align: center;
-            padding: 25px;
         }
         .valuation-text{
-            max-width: 300px;
+            max-width: 600px;
         }
 
     .selling-high-section{
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-end;
+        justify-content: flex-start;
         width: 100%;
+        background-color: rgb(0, 0, 0, .7);
         font-family: 'Quicksand', sans-serif
     }
         .selling-high-header{
@@ -624,15 +585,16 @@ body{
             width: 100%;
             padding: 25px;
             color: white;
-            background-color: rgba(0, 0, 0, 0.7);
         }
         .selling-high-text{
+            width: 100%;
+            max-width: 600px;
             padding-right: 25px;
             padding-left: 25px;
-            padding-top: 25px;
+            padding-top: 0px;
             color: white;
             padding-bottom: 50px;
-            background-color: rgb(0, 0, 0, .7)
+            margin-bottom: 50px;
         }
 
 /*LISTINGS*/
@@ -644,7 +606,7 @@ body{
     width: 100%;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
-    margin-top: 110px;
+    margin-top: 150px;
 }
     .header-intro-container{
         background-color: rgba(255, 255, 255, 0.9);
@@ -727,6 +689,26 @@ body{
 .listing a{
     color: black
 }
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: darkgrey;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    background-color: black;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .footer a{
+        color: darkgrey
+  }
 
 
 /*BUTTONS*/
@@ -740,7 +722,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     max-width: 600px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .button-container{
@@ -776,6 +758,7 @@ body{
 
 .button {
 
+    width: 75px;
     display: inline-block;
     padding: 1rem 1.25rem;
     border-radius: .1rem;
@@ -790,8 +773,11 @@ body{
     font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 0px;
+    margin-top: 5px;
     border: white dotted 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .button:after {
     content: '';

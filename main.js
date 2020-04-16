@@ -9,6 +9,7 @@ function loadIndex() {
                     <div id="buy-button" class="button">BUY</div>
                     <div id="sell-button" class="button">SELL</div>
                     <div id="learn-button" class="button">LEARN</div>
+                    <div id="team-button" class="button">TEAM</div>
                 </div>
             </div>
         </div>`
@@ -23,6 +24,7 @@ function viewIndex() {
                     <div id="buy-button" class="button">BUY</div>
                     <div id="sell-button" class="button">SELL</div>
                     <div id="learn-button" class="button">LEARN</div>
+                    <div id="team-button" class="button">TEAM</div>
                 </div>
             </div>
         </div>`
@@ -36,7 +38,9 @@ function viewBuy() {
         <a href="#top"><div id="scroll-up-button" class="button">^</div></a>
           
         <div class="buy-header">
+
           <div class="buy-intro-container">
+
             <div class="buy-headline-container">
               <div class="view-headline"><h1>HOME BUYING STRATEGY</h2></div>
               <div class="page-button-container">
@@ -46,19 +50,31 @@ function viewBuy() {
                 <div id="blog-button" class="button">BLOG</div>
               </div>
             </div>
-            <div class="buy-intro">
 
-              <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
+            <div class="buy-intro-text">
 
-              <ul>
-                <li>This bullet that's a little bit longer</li>
-                <li>Then this bullet that's cool.</li>
-                <li>Then another bullet that I think will work pretty well too.</li>
-              </ul>
+              <div class="buy-intro">
 
-              <p>Then we conclude with a sentence or two that will get the reader to keep going, and a few buttons.</p>
+                <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
+
+                <ul>
+                  <li>This bullet that's a little bit longer</li>
+                  <li>Then this bullet that's cool.</li>
+                  <li>Then another bullet that I think will work pretty well too.</li>
+                </ul>
+
+                <p>Then we conclude with a sentence or two that will get the reader to keep going, and a few buttons.</p>
+
+                <div class="page-button-container">
+                  <div id="buy-button" class="button">BUY</div>
+                  <div id="sell-button" class="button">SELL</div>
+                  <div id="learn-button" class="button">LEARN</div>
+                </div>
+
+              </div>
 
             </div>
+
           </div>
         </div>
 
@@ -86,52 +102,47 @@ function viewBuy() {
           </div>
         </div>
 
-        <div id="market" class="market-section">
+        <div id="market" class="buyer-agency">
+          <div class="buyer-agency-header">
+            <h2>North Shore Milwaukee Market Research</h2>
+            <div class="buyer-agency-text">
+              <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
 
-          <div class="market-section-header">
-            <div class="market-section-header-text"><h2>Milwaukee North Shore Properties Market Research</h2></div>
-            <div class="page-button-container">
-              <div id="agency-button" class="button">MARKET REPORT</div>
-              <div id="contact-button" class="button">CONTACT US</div>
+              <ul>
+                <li>This bullet that's a little bit longer</li>
+                <li>Then this bullet that's cool.</li>
+                <li>Then another bullet that I think will work pretty well too.</li>
+              </ul>
+
+              <p>Then we conclude with a sentence or two that will get the reader to keep going, and a few buttons.</p>
+
+              <div class="page-button-container">
+                <div id="market-button" class="button">MARKET GUIDE</div>
+                <div id="contact-button" class="button">CONTACT US</div>
+              </div>
             </div>
-          </div>
-
-          <div class="market-section-text-container">
-          <div class="market-section-text">
-            <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
-
-            <ul>
-              <li>This bullet that's a little bit longer</li>
-              <li>Then this bullet that's cool.</li>
-              <li>Then another bullet that I think will work pretty well too.</li>
-            </ul>
-
-            <p>Then we conclude with a sentence or two that will get the reader to keep going, and a few buttons.</p>
-
-          </div>
           </div>
         </div>
 
-        <div id="offer" class="offer-section">
-          <div class="offer-section-header">
-            <h2>What's the Best Offer On a House?</h2>
-          </div>
-          <div class="market-section-text">
-            <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
+        <div id="offer" class="buyer-agency">
+          <div class="buyer-agency-header">
+            <h2>What's The Best Offer On a House?</h2>
+            <div class="buyer-agency-text">
+              <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
 
-            <ul>
-              <li>This bullet that's a little bit longer</li>
-              <li>Then this bullet that's cool.</li>
-              <li>Then another bullet that I think will work pretty well too.</li>
-            </ul>
+              <ul>
+                <li>This bullet that's a little bit longer</li>
+                <li>Then this bullet that's cool.</li>
+                <li>Then another bullet that I think will work pretty well too.</li>
+              </ul>
 
-            <p>Then we conclude with a sentence or two that will get the reader to keep going, and a few buttons.</p>
+              <p>Then we conclude with a sentence or two that will get the reader to keep going, and a few buttons.</p>
 
-            <div class="page-button-container">
-              <div id="offer-button" class="button">BEST OFFER GUIDE</div>
-              <div id="contact-button" class="button">CONTACT US</div>
+              <div class="page-button-container">
+                <div id="best-offer" class="button">OFFERING GUIDE</div>
+                <div id="contact-button" class="button">CONTACT US</div>
+              </div>
             </div>
-
           </div>
         </div>
 
@@ -141,6 +152,7 @@ function viewBuy() {
         viewBuy();
         viewSell();
         viewLearn();
+        viewTeam();
     })
 }
 
@@ -148,15 +160,17 @@ function viewSell() {
     $('#sell-button').on('click', function() {
         $('html').css('background-image', 'url(./images/background-ext.jpeg)');
         $('.pageContent').html(`
+          <a href="#top"><div id="scroll-up-button" class="button">^</div></a>
           <div class="selling-header">
             
             <div class="selling-header-container">
-              <h2>SELLING A HOME</h2>
+              <h1>SELLING A HOME</h1>
               <div class="page-button-container">
                 <div id="staging-button" class="button"><a href="#staging">STAGING</a></div>
                 <div id="valuation-button" class="button"><a href="#valuation">VALUATION</a></div>
                 <div id="sell-high-button" class="button"><a href="#sellinghigh">SELLING HIGH</a></div>
               </div>
+
             </div>
 
             <div class="selling-header-text">
@@ -169,17 +183,27 @@ function viewSell() {
               </ul>
 
               <p>Then we conclude with a sentence or two that will get the reader to keep going, and a few buttons.</p>
+
+              <div class="page-button-container">
+                <div id="buy-button" class="button">BUY</div>
+                <div id="sell-button" class="button">SELL</div>
+                <div id="learn-button" class="button">LEARN</div>
+              </div>
+              
             </div>
           </div>
 
           <div class="selling-page-content">
 
             <div id="staging" class="staging-section">
+
               <div class="staging-section-header">
                 <div class="staging-section-header-text"><h2>STAGING</h2></div>
               </div>
+
               <div class="staging-section-text">
                 <div class="staging-section-text-container">
+
                   <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
 
                   <ul>
@@ -244,7 +268,148 @@ function viewSell() {
         viewBuy();
         viewSell();
         viewLearn();
+        viewTeam()
     })
+}
+
+function viewTeam() {
+  $('#team-button').on('click', function() {
+    $('html').css('background-image', 'url(./images/srg-group-shot.jpg)');
+    $('.pageContent').html(`
+
+    <a href="#top"><div id="scroll-up-button" class="button">^</div></a>
+          
+        <div class="buy-header">
+
+          <div class="buy-intro-container">
+
+            <div class="buy-headline-container">
+              <div class="view-headline"><h1>TEAM</h2></div>
+              <div class="page-button-container">
+                <div id="buy-button" class="button">BUY</div>
+                <div id="sell-button" class="button">SELL</div>
+                <div id="learn-button" class="button">LEARN</div>
+              </div>
+            </div>
+
+            <div class="buy-intro-text">
+
+              <div class="buy-intro">
+
+                  <p><b>Sewart Real Estate Group</b> is a top-performing home seller among First Weber Realtors, with consistent performance in the company's <b>top 5% of MLS sales</b>.</p>
+
+                  <p>For buyers, we provide expert real estate consultation that helps you:
+                    <ul>
+                      <li>Understand and navigate the home buying process, end-to-end</li>
+                      <li>Examine multiple neighborhoods and their advantages, holistically</li>
+                      <li>Envision and achieve goals for your new, ideal home</li>
+                    </ul>
+                  </p>
+              
+                  <p>With <b>30+ years of experience</b> in the Milwaukee North Shore and Ozaukee County real estate market, our knowledgeable, efficient, and exceptionally professional approach to residential home sales delivers accommodating and strategic pre-sale planning, beautiful staging and photography, and comprehensive marketing for faster returns on your investment and trust.</p>
+                  <div class="button-container">
+
+                </div>
+
+                <div class="page-button-container">
+                  <div id="contact-button" class="button">CONTACT US</div>
+                  <div id="blog-button" class="button">BLOG</div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+    
+    <div class="team-container">
+
+          <div class="team-section">
+            <div class="lead-member">
+              <div class="headshot"><img src="images/karine-sewart-head-shot.jpg" alt="karine-sewart-photo"></div>
+              <div class="lead-member-title">
+                <div class="name"><h3>Karine Sewart</h3></div>
+                <div class="title"><h4>Principal</h4></div>
+                <div class="contact-logos">
+                  <div class="phone"><img class="contact-logo" src="images/phone-logo-trans.png" alt="phone-logo"> : <a href="tel:262-247-2683">262.247.2683</a></div>
+                  <div class="email"><img class="contact-logo" src="images/email-logo-trans.png" alt="email-logo"> : <a href="mailto:karine@sewartrealestategroup.com">karine@sewartrealestategroup.com</a></div>
+                </div>
+              </div>
+              <div class="lead-bio"><p>With strong ties to the North Shore community where she was born and raised, Karine has led Sewart Real Estate for more than 13 years, taking the reins from her mother, Lisa, who founded the company 20 years prior. With a reputation as a keen negotiator, educated by the University of Wisconsin School of Business and Nicolet High School, she's delivered top sales performance among First Weber agents in Mequon, WI year after year - in between time spent with her husband, Steve, their three children, two dogs, and rounds of golf.</p></div>
+            </div>
+
+            <div class="team-member">
+              <div class="team-member-header">
+                <div class="headshot"><img src="images/shannon-harrigan-head-shot.jpg" alt="shannon-harrigan-photo"></div>
+                <div class="team-member-title">
+                  <div class="name"><h3>Shannon Harrigan</h3></div>
+                  <div class="title"><h4>Operations Manager</h4></div>
+                  <div class="contact-logos">
+                  <div class="phone"><img class="contact-logo" src="images/phone-logo-trans.png" alt="phone-logo"> : <a href="tel:414-405-1979">414.405.1979</a></div>
+                  <div class="email"><img class="contact-logo" src="images/email-logo-trans.png" alt="email-logo"> : <a href="mailto:sharrigan@firstweber.com">sharrigan@firstweber.com</a></div>
+                </div>
+                </div>
+              </div>
+              <div class="bio"><p>With strong ties to the North Shore community where she was born and raised, Karine has led Sewart Real Estate for more than 13 years, taking the reins from her mother, Lisa, who founded the company 20 years prior. With a reputation as a keen negotiator, educated by the University of Wisconsin School of Business and Nicolet High School, she's delivered top sales performance among First Weber agents in Mequon, WI year after year - in between time spent with her husband, Steve, their three children, two dogs, and rounds of golf.</p></div>
+            </div>
+
+            <div class="team-member">
+              <div class="team-member-header">
+                <div class="headshot"><img src="images/traci-kurtin-head-shot.jpg" alt="traci-kurtin-photo"></div>
+                <div class="team-member-title">
+                  <div class="name"><h3>Traci Kurtin</h3></div>
+                  <div class="title"><h4>Agent</h4></div>
+                  <div class="contact-logos">
+
+                    <div class="phone">
+                      <img class="contact-logo" src="images/phone-logo-trans.png" alt="phone-logo"> : <a href="tel:262-9570388">262.957.0388</a>
+                    </div>
+
+                    <div class="email">
+                      <img class="contact-logo" src="images/email-logo-trans.png" alt="email-logo"> : <a href="mailto:tkurtin@firtweber.com">tkurtin@firstweber.com</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="bio"><p>With strong ties to the North Shore community where she was born and raised, Karine has led Sewart Real Estate for more than 13 years, taking the reins from her mother, Lisa, who founded the company 20 years prior. With a reputation as a keen negotiator, educated by the University of Wisconsin School of Business and Nicolet High School, she's delivered top sales performance among First Weber agents in Mequon, WI year after year - in between time spent with her husband, Steve, their three children, two dogs, and rounds of golf.</p></div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-member-header">
+              <div class="headshot"><img src="images/stephanie-ciaccio-head-shot.jpg" alt="stephanie-ciaccio-photo"></div>
+              <div class="team-member-title">
+                <div class="name"><h3>Stephanie Ciaccio</h3></div>
+                <div class="title"><h4>Agent</h4></div>
+                <div class="contact-logos">
+                  <div class="phone"><img class="contact-logo" src="images/phone-logo-trans.png" alt="phone-logo"> : <a href="tel:414-639-3991">414.639.3991</a></div>
+                  <div class="email"><img class="contact-logo" src="images/email-logo-trans.png" alt="email-logo"> : <a href="mailto:sciaccio@firstweber.com">sciaccio@firstweber.com</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bio"><p>With strong ties to the North Shore community where she was born and raised, Karine has led Sewart Real Estate for more than 13 years, taking the reins from her mother, Lisa, who founded the company 20 years prior. With a reputation as a keen negotiator, educated by the University of Wisconsin School of Business and Nicolet High School, she's delivered top sales performance among First Weber agents in Mequon, WI year after year - in between time spent with her husband, Steve, their three children, two dogs, and rounds of golf.</p></div>
+        </div>
+
+        <div class="team-member">
+          <div class="team-member-header">
+            <div class="headshot"><img src="images/robin-handal-head-shot.jpg" alt="robin-handal-photo"></div>
+            <div class="team-member-title">
+              <div class="name"><h3>Robin Handal</h3></div>
+              <div class="title"><h4>Staging Coordinator</h4></div>
+              <div class="contact-logos">
+                  <div class="phone"><img class="contact-logo" src="images/phone-logo-trans.png" alt="phone-logo"> : <a href="tel:262-247-2683">262.247.2683</a></div>
+                  <div class="email"><img class="contact-logo" src="images/email-logo-trans.png" alt="email-logo"> : <a href="mailto:sewartrealestate@gmail.com">sewartrealestate@gmail.com</a></div>
+                </div>
+            </div>
+          </div>
+          <div class="bio"><p>With strong ties to the North Shore community where she was born and raised, Karine has led Sewart Real Estate for more than 13 years, taking the reins from her mother, Lisa, who founded the company 20 years prior. With a reputation as a keen negotiator, educated by the University of Wisconsin School of Business and Nicolet High School, she's delivered top sales performance among First Weber agents in Mequon, WI year after year - in between time spent with her husband, Steve, their three children, two dogs, and rounds of golf.</p></div>
+        </div>
+      </div>
+    
+    `)
+  })
 }
 
 function viewLearn() {
@@ -271,89 +436,6 @@ function viewLearn() {
             </div> 
 
           </div>
-
-          <div class="team-container">
-          <div class="intro-lead-container">
-            <div class="team-intro">
-              <div id="team-section" class="team-intro-text">
-                <h3>OUR TEAM</h3>
-
-                <p><b>Sewart Real Estate Group</b> is a top-performing home seller among First Weber Realtors, with consistent performance in the company's <b>top 5% of MLS sales</b>.</p>
-
-                <p>For buyers, we provide expert real estate consultation that helps you:
-                  <ul>
-                    <li>Understand and navigate the home buying process, end-to-end</li>
-                    <li>Examine multiple neighborhoods and their advantages, holistically</li>
-                    <li>Envision and achieve goals for your new, ideal home</li>
-                  </ul>
-                </p>
-            
-                <p>With <b>30+ years of experience</b> in the Milwaukee North Shore and Ozaukee County real estate market, our knowledgeable, efficient, and exceptionally professional approach to residential home sales delivers accommodating and strategic pre-sale planning, beautiful staging and photography, and comprehensive marketing for faster returns on your investment and trust.</p>
-                <div class="button-container">
-                <div id="contact-button" class="button"><a href="mailto:team@sewartrealestategroup.com">CONTACT US</a></div>
-              </div>
-            </div>
-          </div>
-          </div>
-
-          <div class="team-section">
-            <div class="lead-member">
-              <div class="headshot"><img src="images/karine-sewart-head-shot.jpg" alt="karine-sewart-photo"></div>
-              <div class="lead-member-title">
-                <div class="name"><h3>Karine Sewart</h3></div>
-                <div class="title"><h4>Principal</h4></div>
-                <div class="contact-logos">
-                  <div class="phone"><img class="contact-logo" src="images/phone-logo-trans.png" alt="phone-logo"> : <a href="tel:262-247-2683">262.247.2683</a></div>
-                  <div class="email"><img class="contact-logo" src="images/email-logo-trans.png" alt="email-logo"> : <a href="mailto:karine@sewartrealestategroup.com">karine@sewartrealestategroup.com</a></div>
-                </div>
-              </div>
-              <div class="lead-bio"><p>With strong ties to the North Shore community where she was born and raised, Karine has led Sewart Real Estate for more than 13 years, taking the reins from her mother, Lisa, who founded the company 20 years prior. With a reputation as a keen negotiator, educated by the University of Wisconsin School of Business and Nicolet High School, she's delivered top sales performance among First Weber agents in Mequon, WI year after year - in between time spent with her husband, Steve, their three children, two dogs, and rounds of golf.</p></div>
-            </div>
-
-            <div class="team-member">
-              <div class="team-member-header">
-                <div class="headshot"><img src="images/shannon-harrigan-head-shot.jpg" alt="shannon-harrigan-photo"></div>
-                <div class="team-member-title">
-                  <div class="name"><h3>Shannon Harrigan</h3></div>
-                  <div class="title"><h4>Operations Manager</h4></div>
-                </div>
-              </div>
-              <div class="bio"><p>With strong ties to the North Shore community where she was born and raised, Karine has led Sewart Real Estate for more than 13 years, taking the reins from her mother, Lisa, who founded the company 20 years prior. With a reputation as a keen negotiator, educated by the University of Wisconsin School of Business and Nicolet High School, she's delivered top sales performance among First Weber agents in Mequon, WI year after year - in between time spent with her husband, Steve, their three children, two dogs, and rounds of golf.</p></div>
-            </div>
-
-            <div class="team-member">
-              <div class="team-member-header">
-                <div class="headshot"><img src="images/traci-kurtin-head-shot.jpg" alt="traci-kurtin-photo"></div>
-                <div class="team-member-title">
-                  <div class="name"><h3>Traci Kurtin</h3></div>
-                  <div class="title"><h4>Agent</h4></div>
-                </div>
-              </div>
-              <div class="bio"><p>With strong ties to the North Shore community where she was born and raised, Karine has led Sewart Real Estate for more than 13 years, taking the reins from her mother, Lisa, who founded the company 20 years prior. With a reputation as a keen negotiator, educated by the University of Wisconsin School of Business and Nicolet High School, she's delivered top sales performance among First Weber agents in Mequon, WI year after year - in between time spent with her husband, Steve, their three children, two dogs, and rounds of golf.</p></div>
-          </div>
-
-          <div class="team-member">
-            <div class="team-member-header">
-              <div class="headshot"><img src="images/stephanie-ciaccio-head-shot.jpg" alt="stephanie-ciaccio-photo"></div>
-              <div class="team-member-title">
-                <div class="name"><h3>Stephanie Ciaccio</h3></div>
-                <div class="title"><h4>Agent</h4></div>
-              </div>
-            </div>
-            <div class="bio"><p>With strong ties to the North Shore community where she was born and raised, Karine has led Sewart Real Estate for more than 13 years, taking the reins from her mother, Lisa, who founded the company 20 years prior. With a reputation as a keen negotiator, educated by the University of Wisconsin School of Business and Nicolet High School, she's delivered top sales performance among First Weber agents in Mequon, WI year after year - in between time spent with her husband, Steve, their three children, two dogs, and rounds of golf.</p></div>
-        </div>
-
-        <div class="team-member">
-          <div class="team-member-header">
-            <div class="headshot"><img src="images/robin-handal-head-shot.jpg" alt="robin-handal-photo"></div>
-            <div class="team-member-title">
-              <div class="name"><h3>Robin Handal</h3></div>
-              <div class="title"><h4>Staging Coordinator</h4></div>
-            </div>
-          </div>
-          <div class="bio"><p>With strong ties to the North Shore community where she was born and raised, Karine has led Sewart Real Estate for more than 13 years, taking the reins from her mother, Lisa, who founded the company 20 years prior. With a reputation as a keen negotiator, educated by the University of Wisconsin School of Business and Nicolet High School, she's delivered top sales performance among First Weber agents in Mequon, WI year after year - in between time spent with her husband, Steve, their three children, two dogs, and rounds of golf.</p></div>
-        </div>
-      </div>
       
       <div class="process-container">
 
@@ -386,6 +468,7 @@ function viewLearn() {
         viewListing();
         viewStaging();
         viewFinance();
+        viewTeam();
     })
 }
 
@@ -535,6 +618,7 @@ loadIndex();
 viewBuy();
 viewSell();
 viewLearn();
+viewTeam();
 
 //calculator
 
@@ -902,6 +986,7 @@ function buildPreviews(properties, value) {
   viewBuy();
   viewSell();
   viewLearn();
+  viewTeam();
   handleMilPriceFilter();
   handleFiveKPriceFilter();
   handleZeroPriceFilter();
