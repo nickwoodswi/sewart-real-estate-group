@@ -4,7 +4,7 @@ function loadIndex() {
     $('.pageContent').html(`
         <div class="main-header">
             <div class="index-buttons">
-                <h2>North Shore Milwaukee Luxury Specialists</h2>
+                <h2>North Shore Milwaukee & Ozaukee Luxury Specialists</h2>
                 <div class="button-container">
                     <div id="buy-button" class="button">BUY</div>
                     <div id="sell-button" class="button">SELL</div>
@@ -33,7 +33,7 @@ function viewIndex() {
 
 function viewBuy() {
     $('#buy-button').on('click', function() {
-        $('html').css('background-image', 'url(./images/background-bath.jpeg');
+        $('html').css('background-image', 'url(./images/Kitchen_with_Dinette_Area.JPG)');
         $('.pageContent').html(`
         <a href="#top"><div id="scroll-up-button" class="button">^</div></a>
           
@@ -414,14 +414,14 @@ function viewTeam() {
 
 function viewLearn() {
     $('#learn-button').on('click', function() {
-        $('html').css('background-image', 'url(./images/srg-group-shot.jpg)');
+        $('html').css('background-image', 'url(./images/Dining_Room.jpg)');
         $('.pageContent').html(`
         <a href="#top"><div id="scroll-up-button" class="button">^</div></a>
           
           <div class="listings-header">
             <div class="header-intro-container">
               
-              <div class="view-headline"><h2>LEARN</h2></div>
+              <div class="view-headline"><h2>RESOURCES</h2></div>
 
               <div class="header-intro">
               <p>What matters most when you buy or sell a home in North Shore Milwaukee? The right team, the right network, staging, and experience all factor in. Learn here about Sewart Real Estate Group, our process, and our market knowledge you need for the right strategy.</p>
@@ -938,15 +938,15 @@ function buildPreviews(properties, value) {
     <div class="listings-header">
       <div class="listings">
         <h2>Houses For Sale In ${value}, WI</h2>
+        <div id="price-filter" class="page-button-container">
+          <button id="mil-price-filter" value="${value}" class="button">$1,000,000+</button>
+          <button id="fivek-price-filter" value="${value}" class="button">$500,000-$999,999</button>
+          <button id="zero-price-filter" value="${value}" class="button">< $500,000</button>
+        </div>
         <div class="page-button-container">
           <div id="buy-button" class="button">BUY</div>
           <div id="sell-button" class="button">SELL</div>
           <div id="learn-button" class="button">LEARN</div>
-        </div>
-        <div class="page-button-container">
-          <button id="mil-price-filter" value="${value}" class="button">$1,000,000+</button>
-          <button id="5k-price-filter" value="${value}" class="button">$500,000-$999,999</button>
-          <button id="zero-price-filter" value="${value}" class="button">UP TO $499,999</button>
         </div>
       </div>
     </div>`
@@ -965,12 +965,12 @@ function buildPreviews(properties, value) {
       </div>
 
       <div class="property-info-container">
-        <div class="city">${city}</div>
+        <div class="city">${street}</div>
         <div class="rooms">${rooms}</div>
         <div class="price-address-container">
 
           <div class="price">${price} </div>
-            <div class="address">${street}</div>
+            <div class="address">${city}</div>
           </div>
 
           <div class="property-details">
