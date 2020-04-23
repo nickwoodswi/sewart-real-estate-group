@@ -33,7 +33,7 @@ function viewIndex() {
 
 function viewBuy() {
     $('#buy-button').on('click', function() {
-        $('html').css('background-image', 'url(./images/Custom_Kitchen.JPG)');
+        $('html').css('background-image', 'url(./images/Custom_Kitchen.jpg)');
         $('.pageContent').html(`
         <a href="#top"><div id="scroll-up-button" class="button">^</div></a>
           
@@ -158,7 +158,7 @@ function viewBuy() {
 
 function viewSell() {
     $('#sell-button').on('click', function() {
-        $('html').css('background-image', 'url(./images/53_Pool_spa.jpg)');
+        $('html').css('background-image', 'url(./images/53_Pool_spa.JPG)');
         $('.pageContent').html(`
           <a href="#top"><div id="scroll-up-button" class="button">^</div></a>
           <div class="selling-header">
