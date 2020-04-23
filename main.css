@@ -1,5 +1,5 @@
 html{
-    background: url(./images/background-image.jpeg) no-repeat center center fixed; 
+    background: url(./images/48_Outdoor_living.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -772,6 +772,13 @@ body{
     margin-top: 10px;
     padding-top: 10px;
 }
+    #calculate{
+        width: 140px;
+    }
+    #county-selector{
+        width: 165px;
+        height: 40px;
+    }
 
 #finance-button-container{
     margin-top: 15px;

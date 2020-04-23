@@ -33,7 +33,7 @@ function viewIndex() {
 
 function viewBuy() {
     $('#buy-button').on('click', function() {
-        $('html').css('background-image', 'url(./images/Kitchen_with_Dinette_Area.JPG)');
+        $('html').css('background-image', 'url(./images/Custom_Kitchen.JPG)');
         $('.pageContent').html(`
         <a href="#top"><div id="scroll-up-button" class="button">^</div></a>
           
@@ -158,7 +158,7 @@ function viewBuy() {
 
 function viewSell() {
     $('#sell-button').on('click', function() {
-        $('html').css('background-image', 'url(./images/background-ext.jpeg)');
+        $('html').css('background-image', 'url(./images/53_Pool_spa.jpg)');
         $('.pageContent').html(`
           <a href="#top"><div id="scroll-up-button" class="button">^</div></a>
           <div class="selling-header">
@@ -414,7 +414,7 @@ function viewTeam() {
 
 function viewLearn() {
     $('#learn-button').on('click', function() {
-        $('html').css('background-image', 'url(./images/Dining_Room.jpg)');
+        $('html').css('background-image', 'url(./images/Custom_Kitchen.jpg)');
         $('.pageContent').html(`
         <a href="#top"><div id="scroll-up-button" class="button">^</div></a>
           
@@ -542,7 +542,7 @@ function viewFinance() {
     $('.process-subcontainer').html(`
       <div class="agency">
 
-        <div class="agency-img-container"><img src="images/Custom Kitchen.jpg"></div>
+        <div class="agency-img-container"><img src="images/Custom_Kitchen.jpg"></div>
 
         <div class="agency-intro">
           <h4>How Does Home Financing Work?</h4>
@@ -568,7 +568,7 @@ function viewFinance() {
                   <input class="input" type="number" value="400000"></input><br>
                 
                   Select County:
-                    <select class="input">
+                    <select id="county-selector" class="input">
                       <option>Milwaukee</option>
                       <option>Ozaukee</option>
                     </select><br>
