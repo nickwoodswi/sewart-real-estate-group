@@ -404,7 +404,7 @@ body{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin-top: 100px;
+        margin-top: 170px;
         margin-bottom: 100px;
         width: 100%;
     }
@@ -490,7 +490,7 @@ body{
     width: 100%;
     margin-top: 50px;
     font-family: 'Quicksand', sans-serif;
-    padding-top: 150px;
+    padding-top: 170px;
     padding-bottom: 100px;
     z-index: 1;
 }
@@ -617,6 +617,7 @@ body{
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
+        margin-top: 50px;
         padding-bottom: 50px;
         padding-top: 50px;
         padding-right: 25px;
