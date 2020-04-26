@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://localhost:3000/assign-workout/recurring -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style type="text/css">header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+    header h1{
+        font-size: 72px;
+        font-style: italic;
+        margin: 0;
+    }
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+    .nav-button{
+        display: flex;
+        width: 100px;
+        height: 50px;
+        background-color: yellow;
+        margin: 5px;
+        font-size: 16px;
+        padding: 5px;
+    }
+.about-perse-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    padding: 15px;
+}
+    .about-perse{
+        width: 100%;
+        max-width: 600px;
+    }
+    .perse-summary{
+        font-size: 32px;
+    }
+select{
+    height: 36px;
+    width: 100px;
+}
+input{
+    height: 30px;
+    margin: 0;
+    line-height: 0;
+}
+button{
+    height: 36px;
+    margin-left: 15px;
+}
+h4{
+    margin-bottom: 0;
+}
+.add-exercise-types{
+    display: flex;
+    margin-bottom: 5px;
+}
+    .add-exercise-type{
+        width: 142px;
+        height: 75px;
+        background-color: yellow;
+        margin-right: 5px;
+    }
+    .select-exercise select{
+        width: 290px;
+    }
+
+#ex-name-input{
+    width: 285px;
+}
+#rep-type{
+    width: 100px;
+}
+    #rep-number{
+        width: 185px;
+    }
+
+.rep-spec{
+    display: flex;
+    width: 100%;
+}
+    .add-weight{
+        width: 150px;
+    }
+    .rep-distance{
+        width: 150px;
+    }
+#weight-number{
+    width: 140px;
+}
+#rep-distance{
+    width: 135px;
+}
+.intensity-spec{
+    display: flex;
+    width: 100%;
+}
+    .tempo-spec{
+        width: 150px;
+    }
+    .subrest-spec{
+        width: 150px;
+    }
+        .intensity-time-selector{
+            width: 65px;
+        }
+        .intensity-time-input{
+            width: 70px;
+        }
+.rest-selector{
+    width: 75px;
+}
+.rest-input{
+    width: 70px;
+}
+.date-assignment-container{
+    margin-bottom: 25px;
+}
+.date-type-selectors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    .date-type-selector{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95px;
+        height: 50px;
+        background-color: yellow;
+        font-size: 16px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+
+.App{
+    display: flex;
+    flex-wrap: wrap;
+}
+    .assignment-spec{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        .build-exercise{
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            background-color: red;
+        }
+            .build-exercise h3{
+                margin-bottom: 5px;
+            }
+        .build-workout{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            background-color: blue;
+        }
+            .sets{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                background-color: pink;
+                width: 100%;
+            }
+            .assign-workout-button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 75px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                background-color: yellow;
+            }
+            .workout{
+                width: 100%;
+                max-width: 530px;
+                height: 400px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: orange;
+                margin-left: auto;
+                margin-right: auto;
+            }
+                .assign-workout-headline{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+                .add-workout{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                    .workout-selector{
+                        width: 120px;
+                        height: 70px;
+                    }
+                    .build-workout-button{
+                        display: flex;
+                        width: 120px;
+                        height: 70px;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: yellow;
+                    }
+                        .build-workout-button-text{
+                            text-align: center;
+                        }
+                .workout h3{
+                    margin-bottom: 5px;
+                }
+            .athlete-selector{
+                width: 100%;
+            }</style><style type="text/css">.set{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: green;
+    margin: 2px;
+}
+    .set-spec{
+        width: 100%;
+        padding: 5px;
+    }
+    .set-edit-buttons{
+        display: flex;
+
+    }
+        .move-set-button{
+            margin: 0;
+            width: 70px;
+        }</style><style type="text/css">.set-number-input{
+    width: 40px;
+    height: 70px;
+}</style><style type="text/css">.date-selector{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.date-selector select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 50px;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.range-date-divider{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    background-color: pink;
+    width: 98%;
+}
+</style><style type="text/css">.recurrence-selectors{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+    .recurrence-selector{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: yellow;
+        width: 70px;
+        height: 50px;
+    }</style><style type="text/css">body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+</style><script charset="utf-8" src="./React App_files/main.8c80d717d857a652ba83.hot-update.js.download"></script></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><header><div class="header"><h1>PERSE</h1></div></header><nav><a aria-current="page" class="active" href="http://localhost:3000/"><div class="nav-button">ABOUT</div></a><a aria-current="page" class="active" href="http://localhost:3000/assign-workout"><div class="nav-button">ASSIGN WORKOUT</div></a><a href="http://localhost:3000/view-workouts"><div class="nav-button">VIEW WORKOUTS</div></a></nav><main class="App"><div class="workout"><div class="assign-workout-headline"><h2>ASSIGN WORKOUT</h2></div><div class="workout-selector-container"><div class="add-workout"><div><select class="workout-selector"><option>Arms</option><option>Legs</option><option>Core</option><option>Cardio</option><option>Exhaustion</option></select></div>OR<div class="build-workout-button"><div class="build-workout-button-text">ADD NEW WORKOUT</div></div></div><h3>To Athlete:</h3><select class="athlete-selector"><option>Nick Woods</option><option>Peter Woods</option><option>Max Woods</option><option>Sarah Woods</option><option>Susan Woods</option><option>Mike Woods</option><option>Kate Woods</option><option>Dorothy Woods</option></select><h3>On Date(s):</h3><div class="date-type-selectors"><a href="http://localhost:3000/assign-workout/single"><div id="single" class="date-type-selector">SINGLE</div></a><a href="http://localhost:3000/assign-workout/range"><div id="range" class="date-type-selector">RANGE</div></a><a href="http://localhost:3000/assign-workout/recurring" aria-current="page" class="active"><div id="recurring" class="date-type-selector">RECURRING</div></a></div><div class="date-assignment-container"><div id="recurring-date-assignment" class="date-assignment"><div class="range-date-divider">RECURRING EVERY:</div><div class="recurrence-selectors"><div class="recurrence-selector">DAY</div><div class="recurrence-selector">2nd DAY</div><div class="recurrence-selector">3rd DAY</div><div class="recurrence-selector">WEEK</div></div><div class="range-date-divider">STARTING</div><div class="range-date-selector"><div class="date-selector"><select class="month-selector"><option>MONTH</option><option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option>June</option><option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option></select><select class="day-selector"></select><select class="year-selector"><option>2020</option><option>2021</option></select></div><div class="range-date-divider">THRU</div><div class="date-selector"><select class="month-selector"><option>MONTH</option><option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option>June</option><option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option></select><select class="day-selector"></select><select class="year-selector"><option>2020</option><option>2021</option></select></div></div></div></div></div></div><div class="assignment-spec"><div class="build-workout"><div class="sets"><div class="assign-workout-button">ASSIGN WORKOUT</div></div></div><div class="build-exercise"><h2>BUILD SETS</h2><div class="add-exercise-types"><div class="add-exercise-type">SELECT EXERCISE</div><div class="add-exercise-type">CREATE EXERCISE</div></div><div class="select-exercise"><select><option>SELECT</option><option>Lunge</option><option>Situp</option><option>Bench Press</option><option>Sprint</option><option>Jog</option><option>Pushup</option><option>Squat</option><option>Jump</option><option>Curl</option><option>Tricep extension</option></select></div><h2>EXERCISE SPEC</h2><h3>Rep Type:</h3><select id="rep-type"><option>TO FAILURE</option><option>SET MULTIPLE</option><option>SINGLE DISTANCE</option></select><input id="rep-number" type="number" placeholder="10" value="1"><div class="rep-spec"><div class="add-weight"><h4>Add Weight (kg):</h4><input id="weight-number" type="number" placeholder="60" value=""></div><div class="rep-distance"><h4>Sub Distance (m):</h4><input id="rep-distance" type="number" placeholder="400" value=""></div></div><div class="intensity-spec"><div class="tempo-spec"><h4>Tempo (reps/time):</h4><select class="intensity-time-selector"><option>NONE</option><option>Sec</option><option>Minute</option><option>Hour</option></select><input class="intensity-time-input" type="number" placeholder="10" value=""></div><div class="subrest-spec"><h4>Sub Rest (sec):</h4><select class="intensity-time-selector"><option>NONE</option><option>Sec</option><option>Minute</option><option>Hour</option></select><input class="intensity-time-input" type="number" placeholder="10" value=""></div></div><h3>Rest:</h3><select class="rest-selector"><option>NONE</option><option>Sec</option><option>Minute</option><option>Hour</option></select><input class="rest-input" type="number" placeholder="10" value=""><button>ADD EXERCISE</button></div></div></main></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js.download"></script><script src="./React App_files/0.chunk.js.download"></script><script src="./React App_files/main.chunk.js.download"></script><script src="./React App_files/main.4b56a9b59c1da1f29118.hot-update.js.download"></script>
+
+</body></html>

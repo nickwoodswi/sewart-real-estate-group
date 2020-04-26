@@ -8,8 +8,8 @@ function loadIndex() {
                 <div class="button-container">
                     <div id="buy-button" class="button">BUY</div>
                     <div id="sell-button" class="button">SELL</div>
-                    <div id="learn-button" class="button">LEARN</div>
                     <div id="team-button" class="button">TEAM</div>
+                    <div id="learn-button" class="button">RESOURCES</div>
                 </div>
             </div>
         </div>`
@@ -42,12 +42,11 @@ function viewBuy() {
           <div class="buy-intro-container">
 
             <div class="buy-headline-container">
-              <div class="view-headline"><h1>HOME BUYING STRATEGY</h2></div>
+              <div class="view-headline"><h1>HOME BUYING PROCESS</h1></div>
               <div class="page-button-container">
-                <div id="agency-button" class="button"><a href="#agency">BUYER AGENCY</a></div>
-                <div id="market-button" class="button"><a href="#market">THE NORTH SHORE MARKET</a></div>
-                <div id="offer-button" class="button"><a href="#offer">OFFER SMART</a></div>
-                <div id="blog-button" class="button">BLOG</div>
+                <div id="agency-button" class="button"><a href="#agency">BUYER AGENCY AGREEMENT</a></div>
+                <div id="market-button" class="button"><a href="#market">MILWAUKEE REAL ESTATE</a></div>
+                <div id="offer-button" class="button"><a href="#offer">HOW TO MAKE AN OFFER ON A HOUSE</a></div>
               </div>
             </div>
 
@@ -55,20 +54,23 @@ function viewBuy() {
 
               <div class="buy-intro">
 
-                <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
+                <p>Financing pre-approval, understanding available loan programs, setting search criteria, making an offer - A lot goes in to buying a home. A strategic approach, leveraging relationships with local lenders and an efficient search of the North Shore and Ozaukee markets, is essential to getting the most from your home buying experience.</p>
+                
+                <p><b>Sewart Real Estate Group</b> offers you:</p>
 
                 <ul>
-                  <li>This bullet that's a little bit longer</li>
-                  <li>Then this bullet that's cool.</li>
-                  <li>Then another bullet that I think will work pretty well too.</li>
+                  <li>A custom portal for MLS search</li>
+                  <li>Up-to-date listing information</li>
+                  <li>Personal notifications when new properties come to market</li>
+                  <li>A vast network of financial partners and sellers
                 </ul>
 
-                <p>Then we conclude with a sentence or two that will get the reader to keep going, and a few buttons.</p>
+                <p>As your Buyer Agent and trusted advisor, we make recommendations on how to structure your offer and contingencies. We make you a competitive buyer for in-demand properties. And we put your interests up front from offer to closing to lifestyle. <a href="mailto:ksewart@firstweber.com">Contact us</a> today.</p>
 
                 <div class="page-button-container">
-                  <div id="buy-button" class="button">BUY</div>
-                  <div id="sell-button" class="button">SELL</div>
-                  <div id="learn-button" class="button">LEARN</div>
+                  <div id="sell-button" class="button">SELL HOME</div>
+                  <div id="team-button" class="button">TEAM</div>
+                  <div id="learn-button" class="button">RESOURCES</div>
                 </div>
 
               </div>
@@ -96,7 +98,7 @@ function viewBuy() {
 
               <div class="page-button-container">
                 <div id="agency-button" class="button">AGENCY GUIDE</div>
-                <div id="contact-button" class="button">CONTACT US</div>
+                <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
               </div>
             </div>
           </div>
@@ -104,7 +106,7 @@ function viewBuy() {
 
         <div id="market" class="buyer-agency">
           <div class="buyer-agency-header">
-            <h2>North Shore Milwaukee Market Research</h2>
+            <h2>Milwaukee Real Estate</h2>
             <div class="buyer-agency-text">
               <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
 
@@ -118,7 +120,7 @@ function viewBuy() {
 
               <div class="page-button-container">
                 <div id="market-button" class="button">MARKET GUIDE</div>
-                <div id="contact-button" class="button">CONTACT US</div>
+                <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
               </div>
             </div>
           </div>
@@ -126,7 +128,7 @@ function viewBuy() {
 
         <div id="offer" class="buyer-agency">
           <div class="buyer-agency-header">
-            <h2>What's The Best Offer On a House?</h2>
+            <h2>How To Make An Offer On a House</h2>
             <div class="buyer-agency-text">
               <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
 
@@ -140,7 +142,7 @@ function viewBuy() {
 
               <div class="page-button-container">
                 <div id="best-offer" class="button">OFFERING GUIDE</div>
-                <div id="contact-button" class="button">CONTACT US</div>
+                <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
               </div>
             </div>
           </div>
@@ -164,30 +166,32 @@ function viewSell() {
           <div class="selling-header">
             
             <div class="selling-header-container">
-              <h1>SELLING A HOME</h1>
+              <h1>SELLING YOUR HOME</h1>
               <div class="page-button-container">
-                <div id="staging-button" class="button"><a href="#staging">STAGING</a></div>
-                <div id="valuation-button" class="button"><a href="#valuation">VALUATION</a></div>
-                <div id="sell-high-button" class="button"><a href="#sellinghigh">SELLING HIGH</a></div>
+                <div id="staging-button" class="button"><a href="#staging">HOME STAGING</a></div>
+                <div id="valuation-button" class="button"><a href="#valuation">VALUE OF MY HOME</a></div>
+                <div id="sell-high-button" class="button"><a href="#sellinghigh">OUR RESULTS</a></div>
               </div>
 
             </div>
 
             <div class="selling-header-text">
-              <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
+              <p>Schedule an in-home meeting with <b>Sewart Real Estate Group</b> and get the personal consultation you need to sell your home at its highest value. Together, we'll tour your home, gather information, and provide thoughtful and accurate pricing and pre-sale recommendations.</p>
+
+              <p>Our team provides you with:</p>
 
               <ul>
-                <li>This bullet that's a little bit longer</li>
-                <li>Then this bullet that's cool.</li>
-                <li>Then another bullet that I think will work pretty well too.</li>
+                <li>Home staging coordination and recommended enhancements and repairs</li>
+                <li>Maximized return on your investment</li>
+                <li>Custom marketing programs to ensure your home is seen by the right buyers, at the right time</li>
               </ul>
 
-              <p>Then we conclude with a sentence or two that will get the reader to keep going, and a few buttons.</p>
+              <p>3D tours, advertising, and expert negotiation are all included when you choose use to sell your most valuable asset. <a href="mailto:ksewart@firstweber.com">Contact us</a> today.</p>
 
               <div class="page-button-container">
-                <div id="buy-button" class="button">BUY</div>
-                <div id="sell-button" class="button">SELL</div>
-                <div id="learn-button" class="button">LEARN</div>
+                <div id="buy-button" class="button">HOME BUYING PROCESS</div>
+                <div id="team-button" class="button">TEAM</div>
+                <div id="learn-button" class="button">RESOURCES</div>
               </div>
               
             </div>
@@ -198,7 +202,7 @@ function viewSell() {
             <div id="staging" class="staging-section">
 
               <div class="staging-section-header">
-                <div class="staging-section-header-text"><h2>STAGING</h2></div>
+                <div class="staging-section-header-text"><h2>HOME STAGING</h2></div>
               </div>
 
               <div class="staging-section-text">
@@ -218,7 +222,7 @@ function viewSell() {
 
                 <div class="page-button-container">
                     <div id="staging-guide-button" class="button">HOME STAGING GUIDE</a></div>
-                    <div id="contact-button"  class="button">CONTACT US</div>
+                    <a href="mailto:ksewart@firstweber.com"><div id="contact-button"  class="button">CONTACT US</div></a>
                 </div>
 
               </div>
@@ -227,7 +231,7 @@ function viewSell() {
             <div id="valuation" class="valuation-section">
             
               <div class="valuation-header">
-                <h2>WHAT'S A HOME WORTH?</h2>
+                <h2>VALUE OF MY HOME</h2>
               </div>
 
               <div class="valuation-text">
@@ -242,7 +246,7 @@ function viewSell() {
                 <p>Then we conclude with a sentence or two that will get the reader to keep going, and a few buttons.</p>
 
                 <div class="page-button-container">
-                  <div id="contact-button" class="button">CONTACT US</div>
+                <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
                 </div>
 
               </div>
@@ -251,11 +255,12 @@ function viewSell() {
             <div id="sellinghigh" class="selling-high-section">
             
               <div class="selling-high-header">
-                <h2>GETTING THE MOST FROM YOUR SALE</h2>
+                <h2>GET THE MOST FROM YOUR SALE</h2>
               </div>
 
               <div class="selling-high-text">
-              <div id="selling-button" class="button">OUR RESULTS</div>
+              <a href="https://sewartrealestategroup.firstweber.com/homes-for-sale/Sold_list-status/68783_listing-sale-agents/pa_68783/nts_12/sd_SA2/sc_lsearch_amt_search_price%2BDESC/"><div id="selling-button" class="button">RECENT SALES</div></a>
+              <a href="https://sewartrealestategroup.firstweber.com/homes-for-sale/Sold_list-status/68783_listing-sale-agents/pa_68783/nts_12/sd_SA2/sc_lsearch_amt_search_price%2BDESC/"><div id="selling-button" class="button">RESULTS</div></a>
               <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes?</p>
 
               <p>Then we conclude with a sentence or two that will get the reader to keep going, and a few buttons.</p>
@@ -284,11 +289,11 @@ function viewTeam() {
           <div class="buy-intro-container">
 
             <div class="buy-headline-container">
-              <div class="view-headline"><h1>TEAM</h2></div>
+              <div class="view-headline"><h1>OUR TEAM</h2></div>
               <div class="page-button-container">
                 <div id="buy-button" class="button">BUY</div>
                 <div id="sell-button" class="button">SELL</div>
-                <div id="learn-button" class="button">LEARN</div>
+                <div id="learn-button" class="button">RESOURCES</div>
               </div>
             </div>
 
@@ -312,8 +317,7 @@ function viewTeam() {
                 </div>
 
                 <div class="page-button-container">
-                  <div id="contact-button" class="button">CONTACT US</div>
-                  <div id="blog-button" class="button">BLOG</div>
+                <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
                 </div>
 
               </div>
@@ -409,12 +413,16 @@ function viewTeam() {
       </div>
     
     `)
+    viewBuy();
+    viewSell();
+    viewLearn();
+    viewTeam()
   })
 }
 
 function viewLearn() {
     $('#learn-button').on('click', function() {
-        $('html').css('background-image', 'url(./images/Custom_Kitchen.jpg)');
+        $('html').css('background-image', 'url(./images/Dining_Room.jpg)');
         $('.pageContent').html(`
         <a href="#top"><div id="scroll-up-button" class="button">^</div></a>
           
@@ -428,9 +436,9 @@ function viewLearn() {
               </div>
 
               <div class="page-button-container">
-                <div id="team-button" class="button"><a href="#team-section">TEAM</a></div>
-                <div id="process-button" class="button"><a href="#process">PROCESS</a></div>
-                <div id="blog-button" class="button">BLOG</div>
+                <div id="buy-button" class="button">BUY</div>
+                <div id="sell-button" class="button">SELL</div>
+                <div id="team-button" class="button">OUR TEAM</div>
               </div>
             
             </div> 
@@ -440,14 +448,14 @@ function viewLearn() {
       <div class="process-container">
 
         <div id="process" class="process-intro">
-          <h3>PROCESS</h3>
+          <h3>HOME BUYING PROCESS</h3>
           <p>Here's a bunch of stuff about the home buying process. Process process process. We're talking about a lot of stuff and just filling this box ith text. It's getting longer. Thinking up words, thinking more. What's the best idea? This is the best idea. Look for more here.</p>
 
           <div class="button-container">
-            <div id="agency-button" class="button">AGENCY</div>
-            <div id="listing-button" class="button">LISTING</div>
-            <div id="staging-button" class="button">STAGING</div>
-            <div id="finance-button" class="button">FINANCE</div>
+            <div id="agency-button" class="button">BUYER AGENCY AGREEMENT</div>
+            <div id="listing-button" class="button">SELLING YOUR HOME</div>
+            <div id="staging-button" class="button">HOME STAGING</div>
+            <div id="finance-button" class="button">REAL ESTATE FINANCE</div>
           </div>
 
           <div class="process-subcontainer"></div>
@@ -484,7 +492,7 @@ function viewAgency() {
           <p>Here's a bunch of stuff about the home buying process. Process process process. We're talking about a lot of stuff and just filling this box ith text. It's getting longer. Thinking up words, thinking more. What's the best idea? This is the best idea. Look for more here.</p>
           <div class="button-container">
             <div id="download-button" class="button">DOWNLOAD</div>
-            <div id="contact-us" class="button">CONTACT US</div>
+            <a href="mailto:ksewart@firstweber.com"><div id="contact-us" class="button">CONTACT US</div></a>
           </div>
         </div>
       
@@ -506,7 +514,7 @@ function viewListing() {
 
           <div class="button-container">
             <div id="selling-button" class="button">SELLING</div>
-            <div id="contact-us" class="button">CONTACT US</div>
+            <a href="mailto:ksewart@firstweber.com"><div id="contact-us" class="button">CONTACT US</div></a>
           </div>
         </div>
       
@@ -528,7 +536,7 @@ function viewStaging() {
 
           <div class="button-container">
             <div id="selling-button" class="button">PRE-SALE GUIDE</div>
-            <div id="contact-us" class="button">CONTACT US</div>
+            <a href="mailto:ksewart@firstweber.com"><div id="contact-us" class="button">CONTACT US</div></a>
           </div>
         </div>
       
@@ -545,12 +553,22 @@ function viewFinance() {
         <div class="agency-img-container"><img src="images/Custom_Kitchen.jpg"></div>
 
         <div class="agency-intro">
-          <h4>How Does Home Financing Work?</h4>
-          <p>Here's a bunch of stuff about the home buying process. Process process process. We're talking about a lot of stuff and just filling this box ith text. It's getting longer. Thinking up words, thinking more. What's the best idea? This is the best idea. Look for more here.</p>
+          <h4>Financing Your New Home</h4>
+          <p>Obtaining financing can be stressful, and complicated. So if you choose to finance, it's important to understand the different loan programs available to you.</p>
+
+          <p>When submitting an offer, it's essential to have in hand your:
+
+          <ul>
+            <li>Pre-approval letter</li>
+            <li>Relationships with local lenders</li>
+            <li>Solid understanding of the home buying process, start to finish</li>
+          </ul>
+
+          <p>Learn more about our list of trusted financial partners, and leverage our market and process knowledge for a better purchase strategy - <a href="mailto:ksewart@firstweber.com">Contact us</a> today.</p>
 
           <div class="button-container">
             <div id="financing-button" class="button">FINANCE GUIDE</div>
-            <div id="contact-us" class="button">CONTACT US</div>
+            <a href="mailto:ksewart@firstweber.com"><div id="contact-us" class="button">CONTACT US</div></a>
           </div>
         </div>
       

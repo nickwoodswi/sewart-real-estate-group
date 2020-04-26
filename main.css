@@ -11,6 +11,13 @@ body{
     margin: 0;
 }
 
+button{
+    cursor: pointer;
+}
+a{
+    color: black;
+}
+
 .pageContent{
     display: flex;
     flex-direction: row;
@@ -457,6 +464,7 @@ body{
         background-size: cover;
         color: black;
         padding: 15px;
+        font-family: 'Quicksand', sans-serif
     }
         .buyer-agency-header h2 {
             text-align: center
@@ -799,7 +807,7 @@ body{
     }
 
 .button {
-
+    cursor: pointer;
     width: 75px;
     display: inline-block;
     padding: 1rem 1.25rem;
