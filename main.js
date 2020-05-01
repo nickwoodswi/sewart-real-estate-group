@@ -44,19 +44,22 @@ function viewBuy() {
             <div class="buy-headline-container">
               <div class="view-headline"><h1>HOME BUYING PROCESS</h1></div>
               <div class="page-button-container">
-                <div id="agency-button" class="button"><a href="#agency">BUYER AGENCY AGREEMENT</a></div>
-                <div id="market-button" class="button"><a href="#market">MILWAUKEE REAL ESTATE</a></div>
-                <div id="offer-button" class="button"><a href="#offer">HOW TO MAKE AN OFFER ON A HOUSE</a></div>
+                <div id="consultation-button" class="button"><a href="#consultation">1. BUYER CONSULTATION</a></div>
+                <div id="agency-button" class="button"><a href="#agency">2. BUYER AGENCY AGREEMENT</a></div>
+                <div id="agency-button" class="button"><a href="#mortgage">3. MORTGAGE PRE-APPROVAL</a></div>
+                <div id="market-button" class="button"><a href="#market">4. PROPERTY SEARCH</a></div>
+                <div id="offer-button" class="button"><a href="#offer">5. HOW TO MAKE AN OFFER ON A HOUSE</a></div>
               </div>
             </div>
 
             <div class="buy-intro-text">
 
-              <div class="buy-intro">
+              <div id="consultation" class="buy-intro">
 
+                <h2>BUYER CONSULTATION </h2>
                 <p>Financing pre-approval, understanding available loan programs, setting search criteria, making an offer - A lot goes in to buying a home. A strategic approach, leveraging relationships with local lenders and an efficient search of the North Shore and Ozaukee markets, is essential to getting the most from your home buying experience.</p>
                 
-                <p><b>Sewart Real Estate Group</b> offers you:</p>
+                <p>The most successful home searches start with intuitive <b>buyer consultation</b>. At yours, <b>Sewart Real Estate Group</b> will discuss a tailored approach to your home buying strategy, giving you:</p>
 
                 <ul>
                   <li>A custom portal for MLS search</li>
@@ -65,7 +68,7 @@ function viewBuy() {
                   <li>A vast network of financial partners and sellers
                 </ul>
 
-                <p>As your Buyer Agent and trusted advisor, we make recommendations on how to structure your offer and contingencies. We make you a competitive buyer for in-demand properties. And we put your interests up front from offer to closing to lifestyle. <a href="mailto:ksewart@firstweber.com">Contact us</a> today.</p>
+                <p>At this consultation, and as your Buyer Agent and trusted advisor, we make recommendations on how to structure your offer and contingencies. We make you a competitive buyer for in-demand properties. And we put your interests up front from offer to closing to lifestyle. <a href="mailto:ksewart@firstweber.com">Contact us</a> today.</p>
 
                 <div class="page-button-container">
                   <div id="sell-button" class="button">SELL HOME</div>
@@ -84,7 +87,7 @@ function viewBuy() {
 
         <div id="agency" class="buyer-agency">
           <div class="buyer-agency-header">
-            <h2>What Is <b>"Buyer Agency?"</b></h2>
+            <h2><b>Buyer Agency Agreement</b></h2>
             <div class="buyer-agency-text">
               <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
 
@@ -104,9 +107,34 @@ function viewBuy() {
           </div>
         </div>
 
+        <div id="mortgage" class="buyer-agency">
+          <div class="buyer-agency-header">
+            <h2>MORTGAGE PRE-APPROVAL</h2>
+            <div class="buyer-agency-text">
+              <p>It's important to understand the different loan programs available to you when you take steps to obtain financing for a new home - Most importanly, because a pre-approval letter is essential when submitting an offer.</p> 
+              
+              <p>Our relationships with local Milwaukee metro lenders give our clients an edge on terms. We have a direct line to a number of mortgage providers, including:</p> 
+
+              <ul>
+                <li>This bullet that's a little bit longer</li>
+                <li>Then this bullet that's cool.</li>
+                <li>Then another bullet that I think will work pretty well too.</li>
+              </ul>
+              
+              Looking to get in touch with these client-focused banks? Contact us today for our list of trusted providers.
+
+              <div class="page-button-container">
+                <div id="agency-button" class="button">AGENCY GUIDE</div>
+                <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
         <div id="market" class="buyer-agency">
           <div class="buyer-agency-header">
-            <h2>Milwaukee Real Estate</h2>
+            <h2>PROPERTY SEARCH</h2>
             <div class="buyer-agency-text">
               <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
 
