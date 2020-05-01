@@ -136,15 +136,18 @@ function viewBuy() {
           <div class="buyer-agency-header">
             <h2>PROPERTY SEARCH</h2>
             <div class="buyer-agency-text">
-              <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
+              <p>Once we've identified your home search criteria at our initial buyer consultation, and have mortgage pre-approval in-hand, your <b>property search</b> begins.<p> 
+              
+              <p>To guide your search, <b>Sewart Real Estate Group</b> provides:
 
               <ul>
-                <li>This bullet that's a little bit longer</li>
-                <li>Then this bullet that's cool.</li>
-                <li>Then another bullet that I think will work pretty well too.</li>
+                <li>Custom MLS property search portal with up-to-date listing information</li>
+                <li>Personal e-mail updates on new homes as they come to market</li>
+                <li>First-hand access to properties of interest</li>
+                <li>Networking opportunities with development leaders and community organizations</li>
               </ul>
 
-              <p>Then we conclude with a sentence or two that will get the reader to keep going, and a few buttons.</p>
+              <p>Our track record of creative home buying strategy makes us your perfect partner for the most timely information.</p>
 
               <div class="page-button-container">
                 <div id="market-button" class="button">MARKET GUIDE</div>
@@ -158,15 +161,17 @@ function viewBuy() {
           <div class="buyer-agency-header">
             <h2>How To Make An Offer On a House</h2>
             <div class="buyer-agency-text">
-              <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
+              <p>Once you've found a home you love, it's time to formulate an offer that delivers you maximum value, while exciting the seller.</p> 
+              
+              <p>As your <b>Buyer Agent</b> and trusted advisors, we have the experience to help you structure your offer and contingencies, and execute tried-and-true tactics that have helped buyer like you win in a competitive situation, including: 
 
               <ul>
                 <li>This bullet that's a little bit longer</li>
                 <li>Then this bullet that's cool.</li>
                 <li>Then another bullet that I think will work pretty well too.</li>
               </ul>
-
-              <p>Then we conclude with a sentence or two that will get the reader to keep going, and a few buttons.</p>
+              
+              From formulating an offer, to negotiation, to signing on the dotted line, <b>Sewart Real Estate Group</b> is the trusted, chosen partner in Milwaukee real estate.</p>
 
               <div class="page-button-container">
                 <div id="best-offer" class="button">OFFERING GUIDE</div>
