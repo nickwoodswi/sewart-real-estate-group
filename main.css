@@ -147,7 +147,21 @@ a{
 
 /*INDEX MAIN*/
 
-
+@media all and (max-width:770px) {
+    .index-buttons{
+        top: 175px !important;
+    }
+}
+@media all and (max-width:442px) {
+    .index-buttons{
+        top: 170px !important;
+    }
+}
+@media all and (max-width:323px) {
+    .index-buttons{
+        top: 164px !important;
+    }
+}
 .main-header{
     display: flex;
     flex-direction: column;
@@ -393,7 +407,11 @@ a{
 
 /*BUY VIEW*/
 
-
+@media all and (max-width: 770px) {
+    .buy-header{
+        margin-top: 50px;
+    }
+}
 .buy-header{
     display: flex;
     flex-direction: row;
@@ -401,10 +419,9 @@ a{
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 50px;
     padding-bottom: 50px;
     text-align: center;
-    font-family: 'Quicksand', sans-serif
+    font-family: 'Quicksand', sans-serif;
 }
     .buy-intro-container{
         display: flex;
@@ -820,7 +837,7 @@ a{
     position: relative;
     overflow: hidden;
     z-index: 1;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;z
     text-decoration: none;
     font-weight: bold;
     margin-top: 5px;
@@ -861,6 +878,29 @@ a{
   .button a{
       text-decoration: none;
       color: white;
+  }
+  #consultation-button{
+      width: 75%;
+      justify-content: flex-start
+  }
+    .consultation-header{
+        text-align: center;
+    }
+  #buyer-agency-button{
+      width: 75%;
+      justify-content: flex-start
+  }
+  #mortgage-button{
+      width: 75%;
+      justify-content: flex-start
+  }
+  #property-button{
+      width: 75%;
+      justify-content: flex-start
+  }
+  #offer-button{
+      width: 75%;
+      justify-content: flex-start
   }
 
 /*CALCULATOR*/

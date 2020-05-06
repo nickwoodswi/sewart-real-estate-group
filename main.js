@@ -4,13 +4,13 @@ function loadIndex() {
     $('.pageContent').html(`
         <div class="main-header">
             <div class="index-buttons">
-                <h2>North Shore Milwaukee & Ozaukee Luxury Specialists</h2>
-                <div class="button-container">
-                    <div id="buy-button" class="button">BUY</div>
-                    <div id="sell-button" class="button">SELL</div>
-                    <div id="team-button" class="button">TEAM</div>
-                    <div id="learn-button" class="button">RESOURCES</div>
-                </div>
+              <h2>North Shore Milwaukee & Ozaukee Luxury Specialists</h2>
+              <div class="button-container">
+                <div id="buy-button" class="button">BUY</div>
+                <div id="sell-button" class="button">SELL</div>
+                <div id="team-button" class="button">TEAM</div>
+                <div id="learn-button" class="button">RESOURCES</div>
+              </div>
             </div>
         </div>`
     )
@@ -45,9 +45,9 @@ function viewBuy() {
               <div class="view-headline"><h1>HOME BUYING PROCESS</h1></div>
               <div class="page-button-container">
                 <div id="consultation-button" class="button"><a href="#consultation">1. BUYER CONSULTATION</a></div>
-                <div id="agency-button" class="button"><a href="#agency">2. BUYER AGENCY AGREEMENT</a></div>
-                <div id="agency-button" class="button"><a href="#mortgage">3. MORTGAGE PRE-APPROVAL</a></div>
-                <div id="market-button" class="button"><a href="#market">4. PROPERTY SEARCH</a></div>
+                <div id="buyer-agency-button" class="button"><a href="#agency">2. BUYER AGENCY AGREEMENT</a></div>
+                <div id="mortgage-button" class="button"><a href="#mortgage">3. MORTGAGE PRE-APPROVAL</a></div>
+                <div id="property-button" class="button"><a href="#market">4. PROPERTY SEARCH</a></div>
                 <div id="offer-button" class="button"><a href="#offer">5. HOW TO MAKE AN OFFER ON A HOUSE</a></div>
               </div>
             </div>
@@ -56,7 +56,7 @@ function viewBuy() {
 
               <div id="consultation" class="buy-intro">
 
-                <h2>BUYER CONSULTATION </h2>
+                <div class="consultation-header"><h2>BUYER CONSULTATION</h2></div>
                 <p>Financing pre-approval, understanding available loan programs, setting search criteria, making an offer - A lot goes in to buying a home. A strategic approach, leveraging relationships with local lenders and an efficient search of the North Shore and Ozaukee markets, is essential to getting the most from your home buying experience.</p>
                 
                 <p>The most successful home searches start with intuitive <b>buyer consultation</b>. At yours, <b>Sewart Real Estate Group</b> will discuss a tailored approach to your home buying strategy, giving you:</p>
