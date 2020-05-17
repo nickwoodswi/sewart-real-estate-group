@@ -149,17 +149,12 @@ a{
 
 @media all and (max-width:770px) {
     .index-buttons{
-        top: 175px !important;
-    }
-}
-@media all and (max-width:442px) {
-    .index-buttons{
-        top: 170px !important;
+        top: 200px !important;
     }
 }
 @media all and (max-width:323px) {
     .index-buttons{
-        top: 164px !important;
+        top: 190px !important;
     }
 }
 .main-header{
@@ -176,7 +171,7 @@ a{
         text-align: center;
         position: absolute;
         width: 276px;
-        height: 248px;
+        height: 200px;
         top: 164px;
         font-family: 'Quicksand', sans-serif;
         padding: 20px;

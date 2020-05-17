@@ -4,7 +4,7 @@ function loadIndex() {
     $('.pageContent').html(`
         <div class="main-header">
             <div class="index-buttons">
-              <h2>North Shore Milwaukee & Ozaukee Luxury Specialists</h2>
+              <h2>Milwaukee Real Estate</h2>
               <div class="button-container">
                 <div id="buy-button" class="button">BUY</div>
                 <div id="sell-button" class="button">SELL</div>
@@ -19,7 +19,7 @@ function viewIndex() {
     $('.pageContent').html(`
         <div class="main-header">
             <div class="index-buttons">
-                <h2>North Shore Milwaukee Luxury Specialists</h2>
+                <h2>Milwaukee Real Estate</h2>
                 <div class="button-container">
                     <div id="buy-button" class="button">BUY</div>
                     <div id="sell-button" class="button">SELL</div>
@@ -57,18 +57,19 @@ function viewBuy() {
               <div id="consultation" class="buy-intro">
 
                 <div class="consultation-header"><h2>BUYER CONSULTATION</h2></div>
-                <p>Financing pre-approval, understanding available loan programs, setting search criteria, making an offer - A lot goes in to buying a home. A strategic approach, leveraging relationships with local lenders and an efficient search of the North Shore and Ozaukee markets, is essential to getting the most from your home buying experience.</p>
-                
-                <p>The most successful home searches start with intuitive <b>buyer consultation</b>. At yours, <b>Sewart Real Estate Group</b> will discuss a tailored approach to your home buying strategy, giving you:</p>
+                <p>The most successful home search starts with a buyer consultation meeting. At yours, Sewart Real Estate Group will discuss a tailored approach to your home buying strategy, making sure you find the perfect home to suit your needs. Sewart Real Estate Group will provide you: 
+                </p>
 
                 <ul>
-                  <li>A custom portal for MLS search</li>
-                  <li>Up-to-date listing information</li>
-                  <li>Personal notifications when new properties come to market</li>
-                  <li>A vast network of financial partners and sellers
+                  <li>A step by step understanding of the Buyer process. </li>
+                  <li>A Custom interactive portal through MLS providing you the most up to date property information.
+                  </li>
+                  <li>A complete review of contracts so you can structure the best most competitive offer. 
+                  </li>
+                  <li>Review our vast network of recommend lenders, contractors, and colleagues implementing</li>
                 </ul>
 
-                <p>At this consultation, and as your Buyer Agent and trusted advisor, we make recommendations on how to structure your offer and contingencies. We make you a competitive buyer for in-demand properties. And we put your interests up front from offer to closing to lifestyle. <a href="mailto:ksewart@firstweber.com">Contact us</a> today.</p>
+                <p><a href="mailto:ksewart@firstweber.com">Contact Sewart Real Estate Group</a> to schedule your Buyer Consultation today.</p>
 
                 <div class="page-button-container">
                   <div id="sell-button" class="button">SELL HOME</div>
@@ -111,20 +112,9 @@ function viewBuy() {
           <div class="buyer-agency-header">
             <h2>MORTGAGE PRE-APPROVAL</h2>
             <div class="buyer-agency-text">
-              <p>It's important to understand the different loan programs available to you when you take steps to obtain financing for a new home - Most importanly, because a pre-approval letter is essential when submitting an offer.</p> 
-              
-              <p>Our relationships with local Milwaukee metro lenders give our clients an edge on terms. We have a direct line to a number of mortgage providers, including:</p> 
-
-              <ul>
-                <li>This bullet that's a little bit longer</li>
-                <li>Then this bullet that's cool.</li>
-                <li>Then another bullet that I think will work pretty well too.</li>
-              </ul>
-              
-              Looking to get in touch with these client-focused banks? Contact us today for our list of trusted providers.
+              <p>If you are obtaining financing it is important to understand the different loan programs that are available you. When submitting an offer, a pre-approval letter is essential. We have relationships with local lenders please contact us today provide a list of trusted providers.
 
               <div class="page-button-container">
-                <div id="agency-button" class="button">AGENCY GUIDE</div>
                 <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
               </div>
 
@@ -161,20 +151,9 @@ function viewBuy() {
           <div class="buyer-agency-header">
             <h2>How To Make An Offer On a House</h2>
             <div class="buyer-agency-text">
-              <p>Once you've found a home you love, it's time to formulate an offer that delivers you maximum value, while exciting the seller.</p> 
-              
-              <p>As your <b>Buyer Agent</b> and trusted advisors, we have the experience to help you structure your offer and contingencies, and execute tried-and-true tactics that have helped buyer like you win in a competitive situation, including: 
-
-              <ul>
-                <li>This bullet that's a little bit longer</li>
-                <li>Then this bullet that's cool.</li>
-                <li>Then another bullet that I think will work pretty well too.</li>
-              </ul>
-              
-              From formulating an offer, to negotiation, to signing on the dotted line, <b>Sewart Real Estate Group</b> is the trusted, chosen partner in Milwaukee real estate.</p>
+              <p>As your Buyers Agents and trusted advisors we will make recommendation on how to structure your offer and contingencies. We will advise you on tactics that can help you win in a competitive situation.  You interest will be at the forefront as we help you through each step in the offer process up to the closing date and beyond.</p>
 
               <div class="page-button-container">
-                <div id="best-offer" class="button">OFFERING GUIDE</div>
                 <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
               </div>
             </div>
@@ -204,22 +183,15 @@ function viewSell() {
                 <div id="staging-button" class="button"><a href="#staging">HOME STAGING</a></div>
                 <div id="valuation-button" class="button"><a href="#valuation">VALUE OF MY HOME</a></div>
                 <div id="sell-high-button" class="button"><a href="#sellinghigh">OUR RESULTS</a></div>
+                <div id="sell-high-button" class="button"><a href="https://sewartrealestategroup.firstweber.com/vp/DisplayServlet?SITE=FIRSTWEBER&SCREENID=AGENT_AVM_LANDING&pres_agent=68783" target="_blank">WHAT IS YOUR HOME WORTH?</a></div>
               </div>
 
             </div>
 
             <div class="selling-header-text">
-              <p>Schedule an in-home meeting with <b>Sewart Real Estate Group</b> and get the personal consultation you need to sell your home at its highest value. Together, we'll tour your home, gather information, and provide thoughtful and accurate pricing and pre-sale recommendations.</p>
+              <p>Schedule an in-home meeting to listen to your needs and learn about your home selling goals. At this time, we will have you give us a tour of your home where we will gather information to provide you with the most thoughtful and most accurate price recommendation for your home and plan for presale preparation.  and high level of to-do list. </p>
 
-              <p>Our team provides you with:</p>
-
-              <ul>
-                <li>Home staging coordination and recommended enhancements and repairs</li>
-                <li>Maximized return on your investment</li>
-                <li>Custom marketing programs to ensure your home is seen by the right buyers, at the right time</li>
-              </ul>
-
-              <p>3D tours, advertising, and expert negotiation are all included when you choose use to sell your most valuable asset. <a href="mailto:ksewart@firstweber.com">Contact us</a> today.</p>
+              <p>Our goal is to present your home in the best light. This may include home enhancements, repairs, and professional staging. We have resources available to assist and manage this process every step of the way. Our goal is to maximize your return.</p>
 
               <div class="page-button-container">
                 <div id="buy-button" class="button">HOME BUYING PROCESS</div>
@@ -288,15 +260,13 @@ function viewSell() {
             <div id="sellinghigh" class="selling-high-section">
             
               <div class="selling-high-header">
-                <h2>GET THE MOST FROM YOUR SALE</h2>
+                <h2>OFFER PROCESS</h2>
               </div>
 
               <div class="selling-high-text">
-              <a href="https://sewartrealestategroup.firstweber.com/homes-for-sale/Sold_list-status/68783_listing-sale-agents/pa_68783/nts_12/sd_SA2/sc_lsearch_amt_search_price%2BDESC/"><div id="selling-button" class="button">RECENT SALES</div></a>
-              <a href="https://sewartrealestategroup.firstweber.com/homes-for-sale/Sold_list-status/68783_listing-sale-agents/pa_68783/nts_12/sd_SA2/sc_lsearch_amt_search_price%2BDESC/"><div id="selling-button" class="button">RESULTS</div></a>
-              <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes?</p>
-
-              <p>Then we conclude with a sentence or two that will get the reader to keep going, and a few buttons.</p>
+              <a href="https://sewartrealestategroup.firstweber.com/homes-for-sale/Sold_list-status/68783_listing-sale-agents/pa_68783/nts_12/sd_SA2/sc_lsearch_amt_search_price%2BDESC/" target="_blank"><div id="selling-button" class="button">RECENT SALES</div></a>
+              <a href="https://sewartrealestategroup.firstweber.com/vp/AgentServlet?SITE=FIRSTWEBER&ScreenID=AGENT_TESTIMONIALS&pres_agent=68783&context=AGENT_PAGE_SEARCH" target="_blank"><div id="selling-button" class="button">TESTIMONIALS</div></a>
+              <p> Once you receive an offer, our years of experience and negotiation expertise will ensure you are well represented. Our team thinks out-of-the-box as an advocate for you to package and make certain the offer represents your best interests before it’s accepted. Once the offer is accepted we are fully engaged with you every step of the way, managing every detail and keeping you well informed. </p>
               </div>
             
             </div>
@@ -334,15 +304,7 @@ function viewTeam() {
 
               <div class="buy-intro">
 
-                  <p><b>Sewart Real Estate Group</b> is a top-performing home seller among First Weber Realtors, with consistent performance in the company's <b>top 5% of MLS sales</b>.</p>
-
-                  <p>For buyers, we provide expert real estate consultation that helps you:
-                    <ul>
-                      <li>Understand and navigate the home buying process, end-to-end</li>
-                      <li>Examine multiple neighborhoods and their advantages, holistically</li>
-                      <li>Envision and achieve goals for your new, ideal home</li>
-                    </ul>
-                  </p>
+                  <p>When you choose Sewart Real Estate Group to help you buy or sell your home, you experience a full-service team committed to consistently delivering exceptional results.</p>
               
                   <p>With <b>30+ years of experience</b> in the Milwaukee North Shore and Ozaukee County real estate market, our knowledgeable, efficient, and exceptionally professional approach to residential home sales delivers accommodating and strategic pre-sale planning, beautiful staging and photography, and comprehensive marketing for faster returns on your investment and trust.</p>
                   <div class="button-container">
@@ -373,7 +335,10 @@ function viewTeam() {
                   <div class="email"><img class="contact-logo" src="images/email-logo-trans.png" alt="email-logo"> : <a href="mailto:karine@sewartrealestategroup.com">karine@sewartrealestategroup.com</a></div>
                 </div>
               </div>
-              <div class="lead-bio"><p>With strong ties to the North Shore community where she was born and raised, Karine has led Sewart Real Estate for more than 13 years, taking the reins from her mother, Lisa, who founded the company 20 years prior. With a reputation as a keen negotiator, educated by the University of Wisconsin School of Business and Nicolet High School, she's delivered top sales performance among First Weber agents in Mequon, WI year after year - in between time spent with her husband, Steve, their three children, two dogs, and rounds of golf.</p></div>
+              <div class="lead-bio"><p>Karine Sewart is the Principal of Sewart Real Estate Group, the #1 sales team at First Weber in Mequon, WI. A graduate of Nicolet High School and the University of Wisconsin ‐ Madison School of Business, Karine has strong ties to the community as a long time North Shore resident. With over thirteen years of experience, Karine has been a consistent top producer with a commitment to delivering a first-class experience.</p>
+
+              <p>She has developed a strong reputation as a keen negotiator, cooperative agent among her peers and an agent who is dedicated to providing the highest level of service to her clients. Karine specializes in luxury home sales and has a very established network which allows her to bring Buyers and Sellers together. With a high energy approach and attention to detail, Karine's clients appreciate her honesty, integrity and sound advice. Karine currently lives in Mequon with her husband, Steve, their three children and one dogs. In her free time, Karine enjoys playing golf and spending time outdoors with her friends and family.
+              </p></div>
             </div>
 
             <div class="team-member">
@@ -388,7 +353,10 @@ function viewTeam() {
                 </div>
                 </div>
               </div>
-              <div class="bio"><p>With strong ties to the North Shore community where she was born and raised, Karine has led Sewart Real Estate for more than 13 years, taking the reins from her mother, Lisa, who founded the company 20 years prior. With a reputation as a keen negotiator, educated by the University of Wisconsin School of Business and Nicolet High School, she's delivered top sales performance among First Weber agents in Mequon, WI year after year - in between time spent with her husband, Steve, their three children, two dogs, and rounds of golf.</p></div>
+              <div class="bio"><p>Shannon Harrigan’s passion for real estate began in 1997 at Federated Realty in Shorewood, Wisconsin. Since then, Shannon developed skills in negotiating, business planning, and business management. In 2002, Shannon joined First Weber Group, the Northshore office, to learn from the top realtors in the industry. In 2011 she joined forces with the First Weber Group, Mequon office, and started the Sewart Real Estate Group with her business partner Karine Sewart. Sewart Real Estate Group has provided an opportunity to specialize in luxury marketing. For more than 20 years, Shannon has had a strong, positive impact on the teams she’s worked with; generating over $325 million in sales.</p>
+
+              <p>Shannon is passionate about the communities she works in. She has deep family roots in Milwaukee and was raised in Shorewood. One way she gives back to the community is by participating in charitable societies, such as Habitat for Humanity and gives back to the First Weber Group Foundation. Shannon understands that buying and selling a house is one of the most important transactions a person will make in their lifetime. Shannon works very hard to help clients understand the process of buying or selling a home and provides timely information so they can make the most informed real estate decision possible.
+              </p></div>
             </div>
 
             <div class="team-member">
@@ -411,7 +379,7 @@ function viewTeam() {
                 </div>
               </div>
 
-              <div class="bio"><p>With strong ties to the North Shore community where she was born and raised, Karine has led Sewart Real Estate for more than 13 years, taking the reins from her mother, Lisa, who founded the company 20 years prior. With a reputation as a keen negotiator, educated by the University of Wisconsin School of Business and Nicolet High School, she's delivered top sales performance among First Weber agents in Mequon, WI year after year - in between time spent with her husband, Steve, their three children, two dogs, and rounds of golf.</p></div>
+              <div class="bio"><p>Traci Kurtin brings twenty‐plus years of marketing, sales, and management experience and an average of $5 million in real estate sales per year to First Weber's Sewart Real Estate Group. Traci is passionate about real estate and going the extra mile to help Milwaukee's North Shore families navigate through the home buying and selling process. Utilizing the most innovative technology tools in the industry and developing a proactive marketing plan to help you achieve your real estate goals ‐‐ Traci and the Sewart Real Estate Group pledge to help make your home search and listing experience easier than you imagined. Traci commits to protect your interests, provide in‐depth market knowledge, connect you to sources that count, follow through every step of the way, and negotiate the best return on your investment. Originally from Arizona, Traci embraces life in Mequon, where she lives with her husband and four children. In her spare time, she enjoys playing tennis, yoga, running, and skiing. Traci is very involved with the Mequon‐ Thiensville School District and serves on the Mequon‐ Thiensville Education Foundation Board.</p></div>
           </div>
 
           <div class="team-member">
@@ -426,7 +394,7 @@ function viewTeam() {
                 </div>
               </div>
             </div>
-            <div class="bio"><p>With strong ties to the North Shore community where she was born and raised, Karine has led Sewart Real Estate for more than 13 years, taking the reins from her mother, Lisa, who founded the company 20 years prior. With a reputation as a keen negotiator, educated by the University of Wisconsin School of Business and Nicolet High School, she's delivered top sales performance among First Weber agents in Mequon, WI year after year - in between time spent with her husband, Steve, their three children, two dogs, and rounds of golf.</p></div>
+            <div class="bio"><p>Stephanie Ciaccio is an Illinois transplant who has made Wisconsin her home for over a decade. She currently resides in Riverwest of Milwaukee with her partner, Brian and their dog Winnie In her spare time, Stephanie enjoys spending time with her family, taking barre classes, cooking and supporting the many great local restaurants our community boasts.</p></div>
         </div>
 
         <div class="team-member">
@@ -441,7 +409,7 @@ function viewTeam() {
                 </div>
             </div>
           </div>
-          <div class="bio"><p>With strong ties to the North Shore community where she was born and raised, Karine has led Sewart Real Estate for more than 13 years, taking the reins from her mother, Lisa, who founded the company 20 years prior. With a reputation as a keen negotiator, educated by the University of Wisconsin School of Business and Nicolet High School, she's delivered top sales performance among First Weber agents in Mequon, WI year after year - in between time spent with her husband, Steve, their three children, two dogs, and rounds of golf.</p></div>
+          <div class="bio"><p>Robin joined the team in February 2018, where she focuses on home staging. Sewart Real Estate Group remains one of the few Milwaukee area real estate teams with a dedicated home stager on its staff.  Robin began her career in Advertising in Dallas, TX and Richmond, VA, and also worked at both Cramer-Krasselt and Laughlin-Constable here in Milwaukee. Her real passion, however, has always been decorating and refurbishing homes. After taking a break from her advertising career to raise her children, Robin decided to pursue her passion by becoming a home stager in 2016. If you ask Robin what she likes most about her work, she’ll tell you she truly enjoys getting to know each client as they work together to prepare their homes for sale. Robin received a BS in Marketing from Miami University (Oxford, Ohio) in 1992. Originally from Louisville, KY, she relocated to Milwaukee in 1996 to marry her husband, Jason. They live in Mequon with their three sons and are active in the community through their family and volunteer work.</p></div>
         </div>
       </div>
     
