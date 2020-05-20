@@ -4,7 +4,7 @@ function loadIndex() {
     $('.pageContent').html(`
         <div class="main-header">
             <div class="index-buttons">
-              <h2>Milwaukee Real Estate</h2>
+              <div class="index-buttons-header"><h2>Milwaukee Real Estate</h2></div>
               <div class="button-container">
                 <div id="buy-button" class="button">BUY</div>
                 <div id="sell-button" class="button">SELL</div>
@@ -19,7 +19,7 @@ function viewIndex() {
     $('.pageContent').html(`
         <div class="main-header">
             <div class="index-buttons">
-                <h2>Milwaukee Real Estate</h2>
+                <div class="index-buttons-header"><h2>Milwaukee Real Estate</h2></div>
                 <div class="button-container">
                     <div id="buy-button" class="button">BUY</div>
                     <div id="sell-button" class="button">SELL</div>
@@ -52,33 +52,34 @@ function viewBuy() {
               </div>
             </div>
 
+            <div id="consultation" class="buy-intro-text-container">
+            <div class="consultation-header"><h2>BUYER CONSULTATION</h2></div>
             <div class="buy-intro-text">
 
-              <div id="consultation" class="buy-intro">
+                <div class="buy-intro">
+                  <p>The most successful home search starts with a buyer consultation meeting. At yours, Sewart Real Estate Group will discuss a tailored approach to your home buying strategy, making sure you find the perfect home to suit your needs. Sewart Real Estate Group will provide you: 
+                  </p>
 
-                <div class="consultation-header"><h2>BUYER CONSULTATION</h2></div>
-                <p>The most successful home search starts with a buyer consultation meeting. At yours, Sewart Real Estate Group will discuss a tailored approach to your home buying strategy, making sure you find the perfect home to suit your needs. Sewart Real Estate Group will provide you: 
-                </p>
+                  <ul>
+                    <li>A step by step understanding of the Buyer process. </li>
+                    <li>A Custom interactive portal through MLS providing you the most up to date property information.
+                    </li>
+                    <li>A complete review of contracts so you can structure the best most competitive offer. 
+                    </li>
+                    <li>Review our vast network of recommend lenders, contractors, and colleagues implementing</li>
+                  </ul>
 
-                <ul>
-                  <li>A step by step understanding of the Buyer process. </li>
-                  <li>A Custom interactive portal through MLS providing you the most up to date property information.
-                  </li>
-                  <li>A complete review of contracts so you can structure the best most competitive offer. 
-                  </li>
-                  <li>Review our vast network of recommend lenders, contractors, and colleagues implementing</li>
-                </ul>
+                  <p><a href="mailto:ksewart@firstweber.com">Contact Sewart Real Estate Group</a> to schedule your Buyer Consultation today.</p>
 
-                <p><a href="mailto:ksewart@firstweber.com">Contact Sewart Real Estate Group</a> to schedule your Buyer Consultation today.</p>
+                  <div class="page-button-container">
+                    <div id="sell-button" class="button">SELL HOME</div>
+                    <div id="team-button" class="button">TEAM</div>
+                    <div id="learn-button" class="button">RESOURCES</div>
+                  </div>
 
-                <div class="page-button-container">
-                  <div id="sell-button" class="button">SELL HOME</div>
-                  <div id="team-button" class="button">TEAM</div>
-                  <div id="learn-button" class="button">RESOURCES</div>
                 </div>
 
-              </div>
-
+            </div>
             </div>
 
           </div>
@@ -88,8 +89,9 @@ function viewBuy() {
 
         <div id="agency" class="buyer-agency">
           <div class="buyer-agency-header">
-            <h2><b>Buyer Agency Agreement</b></h2>
-            <div class="buyer-agency-text">
+            <h2><b>BUYER AGENCY AGREEMENT</b></h2>
+            <div class="buyer-agency-text-container">
+              <div class="buyer-agency-text">
               <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
 
               <ul>
@@ -104,6 +106,7 @@ function viewBuy() {
                 <div id="agency-button" class="button">AGENCY GUIDE</div>
                 <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
               </div>
+              </div>
             </div>
           </div>
         </div>
@@ -111,13 +114,14 @@ function viewBuy() {
         <div id="mortgage" class="buyer-agency">
           <div class="buyer-agency-header">
             <h2>MORTGAGE PRE-APPROVAL</h2>
-            <div class="buyer-agency-text">
+            <div class="buyer-agency-text-container">
+              <div class="buyer-agency-text">
               <p>If you are obtaining financing it is important to understand the different loan programs that are available you. When submitting an offer, a pre-approval letter is essential. We have relationships with local lenders please contact us today provide a list of trusted providers.
 
               <div class="page-button-container">
                 <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
               </div>
-
+              </div>
             </div>
           </div>
         </div>
@@ -125,7 +129,8 @@ function viewBuy() {
         <div id="market" class="buyer-agency">
           <div class="buyer-agency-header">
             <h2>PROPERTY SEARCH</h2>
-            <div class="buyer-agency-text">
+            <div class="buyer-agency-text-container">
+              <div class="buyer-agency-text">
               <p>Once we've identified your home search criteria at our initial buyer consultation, and have mortgage pre-approval in-hand, your <b>property search</b> begins.<p> 
               
               <p>To guide your search, <b>Sewart Real Estate Group</b> provides:
@@ -143,6 +148,7 @@ function viewBuy() {
                 <div id="market-button" class="button">MARKET GUIDE</div>
                 <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
               </div>
+              </div>
             </div>
           </div>
         </div>
@@ -150,11 +156,13 @@ function viewBuy() {
         <div id="offer" class="buyer-agency">
           <div class="buyer-agency-header">
             <h2>How To Make An Offer On a House</h2>
-            <div class="buyer-agency-text">
+            <div class="buyer-agency-text-container">
+              <div class="buyer-agency-text">
               <p>As your Buyers Agents and trusted advisors we will make recommendation on how to structure your offer and contingencies. We will advise you on tactics that can help you win in a competitive situation.  You interest will be at the forefront as we help you through each step in the offer process up to the closing date and beyond.</p>
 
               <div class="page-button-container">
                 <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
+              </div>
               </div>
             </div>
           </div>
