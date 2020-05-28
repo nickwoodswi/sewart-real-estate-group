@@ -9,7 +9,6 @@ function loadIndex() {
                 <div id="buy-button" class="button">BUY</div>
                 <div id="sell-button" class="button">SELL</div>
                 <div id="team-button" class="button">TEAM</div>
-                <div id="learn-button" class="button">RESOURCES</div>
               </div>
             </div>
         </div>`
@@ -23,7 +22,6 @@ function viewIndex() {
                 <div class="button-container">
                     <div id="buy-button" class="button">BUY</div>
                     <div id="sell-button" class="button">SELL</div>
-                    <div id="learn-button" class="button">LEARN</div>
                     <div id="team-button" class="button">TEAM</div>
                 </div>
             </div>
@@ -72,9 +70,9 @@ function viewBuy() {
                   <p><a href="mailto:ksewart@firstweber.com">Contact Sewart Real Estate Group</a> to schedule your Buyer Consultation today.</p>
 
                   <div class="page-button-container">
-                    <div id="sell-button" class="button">SELL HOME</div>
+                    <div id="sell-button" class="button">SELL</div>
                     <div id="team-button" class="button">TEAM</div>
-                    <div id="learn-button" class="button">RESOURCES</div>
+                    <div id="contact-button" class="button">CONTACT</div>
                   </div>
 
                 </div>
@@ -103,7 +101,6 @@ function viewBuy() {
               <p>Then we conclude with a sentence or two that will get the reader to keep going, and a few buttons.</p>
 
               <div class="page-button-container">
-                <div id="agency-button" class="button">AGENCY GUIDE</div>
                 <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
               </div>
               </div>
@@ -145,7 +142,7 @@ function viewBuy() {
               <p>Our track record of creative home buying strategy makes us your perfect partner for the most timely information.</p>
 
               <div class="page-button-container">
-                <div id="market-button" class="button">MARKET GUIDE</div>
+                <div id="for-sale-button" class="button">FOR SALE</div>
                 <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
               </div>
               </div>
@@ -168,6 +165,97 @@ function viewBuy() {
           </div>
         </div>
 
+        <div id="finance" class="buyer-agency">
+          <div class="buyer-agency-header">
+            <h2>REAL ESTATE FINANCE</h2>
+            <div id="finance-section" class="buyer-agency-text-container">
+
+                  <div class="buyer-agency-text">
+                    <p>As your Buyers Agents and trusted advisors we will make recommendation on how to structure your offer and contingencies. We will advise you on tactics that can help you win in a competitive situation.  You interest will be at the forefront as we help you through each step in the offer process up to the closing date and beyond.</p>
+
+                    <div class="page-button-container">
+                      <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
+                    </div>
+                  </div>
+
+                  <div class="mortgage-calculator-container">
+                    <div class="mortgage-calculator">
+                      <div class="mortgage-calculator-header">
+                        <h4>MORTGAGE CALCULATOR</h4>
+                      </div>
+                      <div class="mortgage-calculator-detail">
+                        <div class="mortgage-calculator-inputs">
+                          
+                          Property Price:<br>
+                            <input class="input" type="number" value="400000"></input><br>
+                          
+                            Select County:
+                              <select id="county-selector" class="input">
+                                <option>Milwaukee</option>
+                                <option>Ozaukee</option>
+                              </select><br>
+                        
+                          Down Payment:<br>
+                            <input class="input" type="number" value="100000"></input><br>
+                          
+                          Loan Term (In Years):<br>
+                            <input class="input" type="number" value="30"></input><br>
+                          
+                          Annual Interest (APR):<br>
+                            <input class="input" type="number" value="3.7"></input><br>
+                          
+                          <div class="calculator-button-container">
+                            <button
+                              class="button"
+                              type="button" 
+                              id="calculate">
+                              CALCULATE
+                            </button>
+                          </div>
+                        
+                        </div>
+                        
+                        <div class="mortgage-calculator-result">
+                          <div class="result-header">Monthly Payment:</div>
+                          <div class="result">$932.75</div>
+                          <div class="suggested-property-intro">
+                            <b>Looking for properties in this price range? Start here:</b>
+                          </div>
+                          <div class="suggested-property-detail">
+                            <div class="suggested-property-image">Loading...</div>
+                            <div class="suggested-property-info">Loading...</div>
+                          </div>
+                        </div>
+          
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="buying" class="buyer-agency">
+          <div class="buyer-agency-header">
+            <h2>How To Buy A Home</h2>
+            <div class="buyer-agency-text-container">
+              <div class="buyer-agency-text">
+              <p>As your Buyers Agents and trusted advisors we will make recommendation on how to structure your offer and contingencies. We will advise you on tactics that can help you win in a competitive situation.  You interest will be at the forefront as we help you through each step in the offer process up to the closing date and beyond.</p>
+
+                <div class="page-button-container">
+                  <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
+                </div>
+
+                <div class="home-buying-process-chart">
+                  <img src="./images/flowchart_buying.png">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
         </div>
 
         `);
@@ -175,6 +263,9 @@ function viewBuy() {
         viewSell();
         viewLearn();
         viewTeam();
+        clickHandler();
+        Calculator();
+        forSaleClick()
     })
 }
 
@@ -202,9 +293,9 @@ function viewSell() {
               <p>Our goal is to present your home in the best light. This may include home enhancements, repairs, and professional staging. We have resources available to assist and manage this process every step of the way. Our goal is to maximize your return.</p>
 
               <div class="page-button-container">
-                <div id="buy-button" class="button">HOME BUYING PROCESS</div>
+                <div id="buy-button" class="button">BUY</div>
                 <div id="team-button" class="button">TEAM</div>
-                <div id="learn-button" class="button">RESOURCES</div>
+                <div id="contact-button" class="button">CONTACT</div>
               </div>
               
             </div>
@@ -221,20 +312,22 @@ function viewSell() {
               <div class="staging-section-text">
                 <div class="staging-section-text-container">
 
-                  <p>This is test text just to see how this positions. This is not going to be here later. We're just going to talk about the buying process and about what you do. It includes:</p>
+                  <p>Maximizing your home's sale price starts with a first impression - And that's where Sewart Real Estate Group's dedication to staging and the pre-sale process truly shines. Consider the numbers:</p>
 
                   <ul>
-                    <li>This bullet that's a little bit longer</li>
-                    <li>Then this bullet that's cool.</li>
-                    <li>Then another bullet that I think will work pretty well too.</li>
+                    <li>Staged homes sell for 9% more than unstaged homes, on average</li>
+                    <li>Home staging results in a sale within 33 days on average, compared to 196 days for homes without</li>
+                    <li>The majority of buyers look for homes like those they see in popular media</li>
                   </ul>
     
-                  <p>Then we conclude with a sentence or two that will get the reader to keep going, and a few buttons.</p>
+                  <p>Sewart Real Estate Group provides on-site, gorgeously-composed photography to every seller. And our dedicated staging coordinator, Robin Handal, brings interior design expertise with years of experience in marketing and advertising to every client. Our team even provides 3D tours to our clients so potential buyers online can get a feel for your home before setting up a showing.</p>
+
+                  <p>Combined, these services give our clients a unique advantage when they bring their homes to market. Take a look at one of our 3D tours below, and contact us to learn more.
 
                 </div>
 
                 <div class="page-button-container">
-                    <div id="staging-guide-button" class="button">HOME STAGING GUIDE</a></div>
+                    <a href="https://my.matterport.com/show/?m=Diuo5HrAcLc&brand=0" target="_blank"><div id="3d-tour-button" class="button">3D TOURS</div></a>
                     <a href="mailto:ksewart@firstweber.com"><div id="contact-button"  class="button">CONTACT US</div></a>
                 </div>
 
@@ -304,11 +397,11 @@ function viewTeam() {
               <div class="page-button-container">
                 <div id="buy-button" class="button">BUY</div>
                 <div id="sell-button" class="button">SELL</div>
-                <div id="learn-button" class="button">RESOURCES</div>
+                <div id="contact-button" class="button">CONTACT</div>
               </div>
             </div>
 
-            <div class="buy-intro-text">
+            <div id="team-intro" class="buy-intro-text">
 
               <div class="buy-intro">
 
@@ -349,7 +442,7 @@ function viewTeam() {
               </p></div>
             </div>
 
-            <div class="team-member">
+            <div class="lead-member">
               <div class="team-member-header">
                 <div class="headshot"><img src="images/shannon-harrigan-head-shot.jpg" alt="shannon-harrigan-photo"></div>
                 <div class="team-member-title">
@@ -367,7 +460,7 @@ function viewTeam() {
               </p></div>
             </div>
 
-            <div class="team-member">
+            <div class="lead-member">
               <div class="team-member-header">
                 <div class="headshot"><img src="images/traci-kurtin-head-shot.jpg" alt="traci-kurtin-photo"></div>
                 <div class="team-member-title">
@@ -390,7 +483,7 @@ function viewTeam() {
               <div class="bio"><p>Traci Kurtin brings twenty‐plus years of marketing, sales, and management experience and an average of $5 million in real estate sales per year to First Weber's Sewart Real Estate Group. Traci is passionate about real estate and going the extra mile to help Milwaukee's North Shore families navigate through the home buying and selling process. Utilizing the most innovative technology tools in the industry and developing a proactive marketing plan to help you achieve your real estate goals ‐‐ Traci and the Sewart Real Estate Group pledge to help make your home search and listing experience easier than you imagined. Traci commits to protect your interests, provide in‐depth market knowledge, connect you to sources that count, follow through every step of the way, and negotiate the best return on your investment. Originally from Arizona, Traci embraces life in Mequon, where she lives with her husband and four children. In her spare time, she enjoys playing tennis, yoga, running, and skiing. Traci is very involved with the Mequon‐ Thiensville School District and serves on the Mequon‐ Thiensville Education Foundation Board.</p></div>
           </div>
 
-          <div class="team-member">
+          <div class="lead-member">
             <div class="team-member-header">
               <div class="headshot"><img src="images/stephanie-ciaccio-head-shot.jpg" alt="stephanie-ciaccio-photo"></div>
               <div class="team-member-title">
@@ -405,7 +498,7 @@ function viewTeam() {
             <div class="bio"><p>Stephanie Ciaccio is an Illinois transplant who has made Wisconsin her home for over a decade. She currently resides in Riverwest of Milwaukee with her partner, Brian and their dog Winnie In her spare time, Stephanie enjoys spending time with her family, taking barre classes, cooking and supporting the many great local restaurants our community boasts.</p></div>
         </div>
 
-        <div class="team-member">
+        <div class="lead-member">
           <div class="team-member-header">
             <div class="headshot"><img src="images/robin-handal-head-shot.jpg" alt="robin-handal-photo"></div>
             <div class="team-member-title">
@@ -637,7 +730,7 @@ function viewFinance() {
         </div>
     `)
     clickHandler();
-    Calculator()
+    Calculator();
   })
 }
 
@@ -782,6 +875,12 @@ function handleDropClick() {
     })
 }
 
+function forSaleClick() {
+  $('#for-sale-button').on('click', function() {
+    loadPropertyDetails('https://www.firstweber.com/homes-for-sale/Mequon_combo/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/page_1//nts_100/', 'Mequon')
+  })
+}
+
 function handleMilPriceFilter() {
   $('#mil-price-filter').on('click', function() {
       let value = $(this).val()
@@ -902,6 +1001,7 @@ const neighborhoods = {
 };
 
 function loadPropertyDetails(url, value) {
+  $('.pageContent').html(`<div class="loading"><h2>Loading properties...</h2></div>`)
   fetch(url)
   .then((response) => {
     return response.text()
@@ -973,7 +1073,7 @@ function buildPreviews(properties, value) {
         <div class="page-button-container">
           <div id="buy-button" class="button">BUY</div>
           <div id="sell-button" class="button">SELL</div>
-          <div id="learn-button" class="button">LEARN</div>
+          <div id="team-button" class="button">TEAM</div>
         </div>
       </div>
     </div>`

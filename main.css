@@ -7,6 +7,13 @@ html{
     scroll-behavior: smooth;
 }
 
+.loading{
+    margin-top: 300px;
+    margin-bottom: 880px;
+    color: black;
+    font-family: 'Quicksand', sans-serif
+}
+
 body{
     margin: 0;
 }
@@ -149,7 +156,7 @@ a{
 
 @media all and (max-width:770px) {
     .index-buttons{
-        top: 200px !important;
+        top: 185px !important;
     }
 }
 @media all and (max-width:323px) {
@@ -175,8 +182,8 @@ a{
     .index-buttons{
         text-align: center;
         position: absolute;
-        width: 276px;
-        height: 200px;
+        width: 250px;
+        height: 260px;
         top: 164px;
         padding-bottom: 25px;
         padding-right: 25px;
@@ -476,6 +483,9 @@ a{
             padding-right: 20px;
             background-color: rgb(255, 255, 255, 0.8);
         }
+            #team-intro{
+                max-width: 600px;
+            }
 
 .buyers-content{
     display: flex;
@@ -511,15 +521,31 @@ a{
         justify-content: center;
         align-items: center;
     }
+        @media all and (max-width: 770px) {
+            #finance-section {
+                flex-wrap: wrap !important;
+            }
+        }
+        #finance-section{
+            flex-wrap: nowrap;
+            max-width: 650px;
+        }
         .buyer-agency-text{
             padding: 25px;
             max-width: 600px;
             background-color: rgba(255, 255, 255, 0.9);
             box-shadow: 10px 10px 10px (0, 0, 0, 0.5);
         }
-    #offer{
-        margin-bottom: 100px;
-    }
+        .home-buying-process-chart{
+            text-align: center;
+        }
+            .home-buying-process-chart img{
+                margin-top: 25px;
+                max-width: 400px;
+            }
+            #buying{
+                margin-bottom: 100px;
+            }
 
 @media all and (max-width: 660px){
     .buyer-agency-text{
@@ -569,13 +595,25 @@ a{
     flex-wrap: wrap;
     width: 100%;
 }
+    @media all and (max-width: 770px) {
+        .staging-section{
+            padding-top: 150px !important;
+        }
+        .valuation-section{
+            padding-top: 200px !important;
+        }
+        .selling-high-section{
+            padding-top: 150px !important;
+        }
+    }
     .staging-section{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         justify-content: space-evenly;
         font-family: 'Quicksand', sans-serif;
-        background-color: rgba(255, 255, 255, .5)
+        background-color: rgba(255, 255, 255, .5);
+        padding-top: 65px;
     }
         .staging-section-header{
             width: 100%;
@@ -609,8 +647,8 @@ a{
         font-family: 'Quicksand', sans-serif;
         background-color: rgba(255, 255, 255, 0.9);
         box-shadow: 0px 5px 10px rgb(0, 0, 0, .5);
-        padding-top: 25px;
-        padding-bottom: 10px;
+        padding-top: 100px;
+        padding-bottom: 80px;
     }
         .valuation-header{
             display: flex;
@@ -649,7 +687,11 @@ a{
 
 /*LISTINGS*/
 
-
+@media all and (max-width: 770px) {
+    .listings-header{
+        padding-top: 190px !important;
+    }
+}
 .listings-header{
     display: flex;
     justify-content: center;
@@ -676,7 +718,7 @@ a{
         }
             .view-headline h2{
                 font-size: 36px;
-                text-decoration: orange underline;
+                /* text-decoration: orange underline; */
             }
         .header-intro{
             width: 100%;
@@ -848,7 +890,7 @@ a{
 
 .button {
     cursor: pointer;
-    width: 90px;
+    width: 95px;
     display: inline-block;
     padding: 1rem 1.25rem;
     border-radius: .1rem;
@@ -932,7 +974,6 @@ a{
     width: 95%;
     font-family: 'Quicksand', sans-serif;
     margin-top: 25px;
-    margin-bottom: 75px;
 }
     .mortgage-calculator{
         display: flex;
@@ -943,6 +984,8 @@ a{
         background-color: rgb(255, 255, 255, 0.9);
         box-shadow: -5px 5px 10px lightgrey;
         padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
         .mortgage-calculator-header{}
             .mortgage-calculator-header h4{
