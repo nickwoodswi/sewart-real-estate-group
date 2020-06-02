@@ -152,7 +152,7 @@ function viewBuy() {
 
         <div id="offer" class="buyer-agency">
           <div class="buyer-agency-header">
-            <h2>How To Make An Offer On a House</h2>
+            <h2>HOW TO MAKE AN OFFER ON A HOUSE</h2>
             <div class="buyer-agency-text-container">
               <div class="buyer-agency-text">
               <p>As your Buyers Agents and trusted advisors we will make recommendation on how to structure your offer and contingencies. We will advise you on tactics that can help you win in a competitive situation.  You interest will be at the forefront as we help you through each step in the offer process up to the closing date and beyond.</p>
@@ -238,7 +238,7 @@ function viewBuy() {
 
         <div id="buying" class="buyer-agency">
           <div class="buyer-agency-header">
-            <h2>How To Buy A Home</h2>
+            <h2>HOW TO BUY A HOME</h2>
             <div class="buyer-agency-text-container">
               <div class="buyer-agency-text">
               <p>As your Buyers Agents and trusted advisors we will make recommendation on how to structure your offer and contingencies. We will advise you on tactics that can help you win in a competitive situation.  You interest will be at the forefront as we help you through each step in the offer process up to the closing date and beyond.</p>
@@ -361,7 +361,7 @@ function viewSell() {
             <div id="sellinghigh" class="selling-high-section">
             
               <div class="selling-high-header">
-                <h2>OFFER PROCESS</h2>
+                <h2>OUR RESULTS</h2>
               </div>
 
               <div class="selling-high-text">
