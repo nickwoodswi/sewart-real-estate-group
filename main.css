@@ -466,7 +466,6 @@ a{
             .view-headline h1{
                 margin: 0;
                 margin-bottom: 15px;
-                text-decoration: underline orange
             }
         .buy-intro-text-container{
             width: 100%;
@@ -536,6 +535,15 @@ a{
             background-color: rgba(255, 255, 255, 0.9);
             box-shadow: 10px 10px 10px (0, 0, 0, 0.5);
         }
+            @media all and (min-width: 770px) {
+                #finance-detail{
+                    height: 505px;
+                }
+            }
+            #finance-detail{
+                display: flex;
+                flex-wrap: wrap;
+            }
         .home-buying-process-chart{
             text-align: center;
         }
@@ -579,7 +587,6 @@ a{
         margin-right: auto;
     }
         .selling-header-container h1{
-            text-decoration: underline orange
         }
     .selling-header-text{
         width: 100%;
@@ -718,7 +725,6 @@ a{
         }
             .view-headline h2{
                 font-size: 36px;
-                /* text-decoration: orange underline; */
             }
         .header-intro{
             width: 100%;
@@ -967,9 +973,22 @@ a{
       width: 75%;
       justify-content: flex-start
   }
+  #finance-button{
+    width: 75%;
+    justify-content: flex-start
+}
+#buying-button{
+    width: 75%;
+    justify-content: flex-start
+}
 
 /*CALCULATOR*/
 
+@media all and (min-width: 770px) {
+    .mortgage-calculator-container{
+        margin-top: 0px !important;
+    }
+}
 .mortgage-calculator-container{
     width: 95%;
     font-family: 'Quicksand', sans-serif;
@@ -991,7 +1010,6 @@ a{
             .mortgage-calculator-header h4{
                 margin:0;
                 margin-bottom: 10px;
-                text-decoration: underline orange;
                 font-size: 21px;
             }
         .mortgage-calculator-detail{

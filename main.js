@@ -47,6 +47,8 @@ function viewBuy() {
                 <div id="mortgage-button" class="button"><a href="#mortgage">3. MORTGAGE PRE-APPROVAL</a></div>
                 <div id="property-button" class="button"><a href="#market">4. PROPERTY SEARCH</a></div>
                 <div id="offer-button" class="button"><a href="#offer">5. HOW TO MAKE AN OFFER ON A HOUSE</a></div>
+                <div id="finance-button" class="button"><a href="#finance">6. REAL ESTATE FINANCE</a></div>
+                <div id="buying-button" class="button"><a href="#buying">7. BUYING A HOME</a></div>
               </div>
             </div>
 
@@ -170,8 +172,10 @@ function viewBuy() {
             <h2>REAL ESTATE FINANCE</h2>
             <div id="finance-section" class="buyer-agency-text-container">
 
-                  <div class="buyer-agency-text">
+                  <div id="finance-detail" class="buyer-agency-text">
                     <p>As your Buyers Agents and trusted advisors we will make recommendation on how to structure your offer and contingencies. We will advise you on tactics that can help you win in a competitive situation.  You interest will be at the forefront as we help you through each step in the offer process up to the closing date and beyond.</p>
+
+                    <p>As your Buyers Agents and trusted advisors we will make recommendation on how to structure your offer and contingencies. We will advise you on tactics that can help you win in a competitive situation.</p>
 
                     <div class="page-button-container">
                       <a href="mailto:ksewart@firstweber.com"><div id="contact-button" class="button">CONTACT US</div></a>
